@@ -18,6 +18,8 @@ Buka `index.html` di browser, atau gunakan server lokal pilihanmu selama pengemb
 - `css/service-pages.css` — gaya untuk halaman detail layanan
 - `js/main.js` — dropdown layanan, navigasi mobile, dan tahun footer
 - `assets/images/insider-primary-logo.png` — logo utama INSIDER
+- `assets/images/insider-clinic-growth-hero.png` — foto latar utama
+- `assets/icons/` — favicon dan ikon layanan
 - `assets/icons/favicon.svg` — ikon tab browser
 
 Growth Partnership disusun sebagai proyek dengan ruang lingkup dan timeline yang disepakati bersama. Pembayaran dapat dijadwalkan per bulan mengikuti timeline proyek.

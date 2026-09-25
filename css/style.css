@@ -133,3 +133,58 @@ h1 em, h2 em { color: var(--green); font-style: normal; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* Visual refinements */
+.site-nav a, .nav-dropdown-toggle { font-size: .92rem; }
+.dropdown-menu { width: 365px; }
+.dropdown-menu a { grid-template-columns: 42px 1fr; align-items: center; column-gap: 12px; }
+.dropdown-item-icon { width: 38px; height: 38px; grid-row: 1 / span 2; display: grid; place-items: center; border-radius: 11px; background: #edf2e6; }
+.dropdown-item-icon img { width: 21px; height: 21px; }
+.dropdown-menu a span:not(.dropdown-item-icon) { font-size: .91rem; }
+.dropdown-menu a small { font-size: .75rem; }
+.eyebrow { font-size: .75rem; }
+.hero-copy { font-size: clamp(1.08rem,1.4vw,1.2rem); }
+.hero-note { font-size: .8rem; }
+.signal-strip p { font-size: .9rem; }
+.section-lead { font-size: 1.04rem; }
+.question-list p { font-size: .94rem; }
+.problem-callout p { font-size: .84rem; }
+.process-label { font-size: .63rem; }
+.process-card h3 { font-size: 1.22rem; }
+.process-card > p:not(.process-label) { font-size: .81rem; }
+.process-outcome span { font-size: .66rem; }
+.process-outcome b { font-size: .74rem; }
+.outcome-list p { font-size: .9rem; }
+.services-heading > .section-lead { font-size: .94rem; }
+.service-main-icon img { width: 26px; height: 26px; }
+.project-note p { font-size: .78rem; }
+.project-note b { font-size: .82rem; }
+.enabler-label { font-size: .87rem; }
+.enabler-index { font-size: .62rem; }
+.enabler-icon img { width: 21px; height: 21px; }
+.enabler-card h3 { font-size: 1.23rem; }
+.enabler-card > p { font-size: .79rem; }
+.enabler-card li { font-size: .75rem; }
+.flex-note { font-size: .77rem; }
+.site-footer > p, .back-top { font-size: .75rem; }
+.site-footer small { font-size: .67rem; }
+
+.hero-art { min-height: 0; width: 100%; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 24px; background-image: url("../assets/images/insider-clinic-growth-hero.png"); background-position: 69% center; background-size: cover; box-shadow: 0 20px 55px rgba(14,58,47,.13); transform: none; }
+.hero-art::before { inset: 0; z-index: 0; width: auto; height: auto; border-radius: inherit; background: linear-gradient(0deg,rgba(8,45,37,.68),rgba(8,45,37,.08) 48%,transparent 74%); }
+.hero-image-caption { position: absolute; z-index: 1; right: 22px; bottom: 22px; left: 22px; display: grid; gap: 4px; color: #fff; }
+.hero-image-caption span { color: #dbe5c4; font-size: .63rem; font-weight: 700; letter-spacing: .18em; }
+.hero-image-caption b { font-family: var(--font-display); font-size: 1.08rem; font-weight: 600; }
+
+@media (max-width: 760px) {
+  .site-nav a, .nav-dropdown-toggle { font-size: .95rem; }
+  .section-lead { font-size: .98rem; }
+  .hero-art { width: 100%; min-height: 0; margin: 16px 0 0; aspect-ratio: 16 / 10; transform: none; background-position: 68% center; }
+  .hero-image-caption { right: 16px; bottom: 16px; left: 16px; }
+  .hero-image-caption b { font-size: .95rem; }
+  .process-card h3 { font-size: 1.1rem; }
+  .process-card > p:not(.process-label) { font-size: .78rem; }
+  .process-outcome b { font-size: .7rem; }
+  .outcome-list p { font-size: .85rem; }
+  .enabler-card h3 { font-size: 1.16rem; }
+  .enabler-card > p { font-size: .78rem; }
+}
