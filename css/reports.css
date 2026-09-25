@@ -16,128 +16,85 @@
 }
 
 /* ------------------------------------------------------------
-   COMPACT CONTROLS BAR (Filters & Search)
+   SAMPLE SHOWCASE NOTICE BANNER
+   "tambahkan notes bahwa report yang ada pada showcase ini adalah sample,
+    hasil setiap klinik bisa jadi cukup berbeda tergantung juga ketersediaan bahannya yaitu data"
    ------------------------------------------------------------ */
-.reports-header-bar {
+.reports-notice-banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 24px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e3ebe0;
+  gap: 18px;
+  background: linear-gradient(135deg, #f7faf5 0%, #f0f5ed 100%);
+  border: 1px solid #d6e2cf;
+  border-left: 4px solid var(--green);
+  border-radius: 14px;
+  padding: 14px 22px;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 16px rgba(14, 58, 47, 0.04);
 }
 
-/* Filter Tabs */
-.reports-filter-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.filter-btn {
-  padding: 8px 16px;
-  border-radius: 999px;
-  border: 1.5px solid #dbe2d6;
-  background: #ffffff;
-  color: var(--slate);
-  font-family: var(--font-body);
-  font-size: 0.82rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
+.notice-icon {
+  flex-shrink: 0;
   display: inline-flex;
   align-items: center;
-  gap: 7px;
-}
-.filter-btn:hover {
-  border-color: #a7b47a;
-  color: var(--green);
-  background: #f8faf4;
-}
-.filter-btn.is-active {
-  background: var(--green);
-  border-color: var(--green);
-  color: #ffffff;
-  box-shadow: 0 4px 12px rgba(14, 58, 47, 0.18);
-}
-.filter-btn .count-badge {
-  padding: 2px 7px;
-  border-radius: 999px;
-  background: #edf2e7;
-  color: var(--green);
-  font-size: 0.72rem;
-  font-weight: 700;
-  transition: all 0.2s ease;
-}
-.filter-btn.is-active .count-badge {
-  background: rgba(255, 255, 255, 0.2);
-  color: #ffffff;
-}
-
-/* Search Box */
-.reports-search-box {
-  position: relative;
-  min-width: 260px;
-  max-width: 320px;
-}
-.reports-search-box input {
-  width: 100%;
-  padding: 9px 34px 9px 36px;
-  border-radius: 999px;
-  border: 1.5px solid #dbe2d6;
-  background: #ffffff;
-  font-family: var(--font-body);
-  font-size: 0.84rem;
-  color: var(--text);
-  outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-.reports-search-box input:focus {
-  border-color: var(--green);
-  box-shadow: 0 0 0 3px rgba(14, 58, 47, 0.1);
-}
-.reports-search-icon {
-  position: absolute;
-  left: 13px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #8c9b94;
-  font-size: 0.85rem;
-  pointer-events: none;
-}
-.reports-search-clear {
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  border: none;
-  background: transparent;
-  color: #8c9b94;
-  cursor: pointer;
-  font-size: 0.9rem;
-  display: none;
-  padding: 4px;
-}
-.reports-search-clear:hover {
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(14, 58, 47, 0.08);
   color: var(--green);
 }
 
-/* Status Bar Info */
-.reports-status-bar {
+.notice-body {
+  flex: 1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 24px;
-  color: var(--muted);
-  font-size: 0.82rem;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-.reports-count-text b {
-  color: var(--green);
+
+.notice-tag {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: var(--green);
+  color: #eaf3e1;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
-.reports-hint {
-  color: #809088;
-  font-size: 0.80rem;
+
+.notice-text {
+  margin: 0;
+  color: #27453b;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.notice-text strong {
+  color: var(--green-deep);
+}
+
+.notice-hint {
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  color: #72847b;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .reports-notice-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .notice-hint {
+    display: none;
+  }
 }
 
 /* ------------------------------------------------------------
@@ -149,27 +106,6 @@
   gap: 28px;
 }
 
-/* Empty State */
-.reports-empty {
-  grid-column: 1 / -1;
-  padding: 60px 24px;
-  text-align: center;
-  background: #ffffff;
-  border: 1.5px dashed #dbe2d6;
-  border-radius: 20px;
-  display: none;
-}
-.reports-empty h3 {
-  margin: 0 0 8px;
-  font-family: var(--font-display);
-  color: var(--green-deep);
-  font-size: 1.25rem;
-}
-.reports-empty p {
-  margin: 0 0 16px;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
 
 /* ------------------------------------------------------------
    REPORT CARD (IMAGE CONTAINER - 3:2 ASPECT RATIO)
@@ -272,54 +208,6 @@
   background: #16a34a;
 }
 
-/* ------------------------------------------------------------
-   INSIDER LOGO WATERMARK FOR REPORT DISPLAYS
-   "kasih watermark logo INSIDER untuk setiap tampilan reportnya"
-   ------------------------------------------------------------ */
-.report-watermark {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-  z-index: 2;
-  overflow: hidden;
-}
-.report-watermark .watermark-logo {
-  width: 58%;
-  max-width: 300px;
-  height: auto;
-  opacity: 0.28;
-  transform: rotate(-18deg) scale(1.05);
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35)) drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
-  transition: opacity 0.35s ease, transform 0.45s ease;
-  user-select: none;
-}
-.report-card:hover .report-watermark .watermark-logo {
-  opacity: 0.15;
-  transform: rotate(-18deg) scale(1.15);
-}
-
-.modal-watermark {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-  z-index: 6;
-  overflow: hidden;
-}
-.modal-watermark .watermark-logo {
-  width: 54%;
-  max-width: 480px;
-  height: auto;
-  opacity: 0.26;
-  transform: rotate(-18deg);
-  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
-  user-select: none;
-}
 
 /* ------------------------------------------------------------
    HOVER OVERLAY: DETAIL INFORMASI DI DALAM GAMBAR

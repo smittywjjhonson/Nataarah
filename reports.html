@@ -95,37 +95,25 @@
     <main id="main" class="reports-main">
       <div class="section-wrap">
 
-        <!-- COMPACT FILTER & SEARCH BAR -->
-        <div class="reports-header-bar">
-          <div class="reports-filter-tabs" role="tablist" aria-label="Kategori laporan">
-            <button type="button" class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">
-              Semua <span class="count-badge" id="count-all">6</span>
-            </button>
-            <button type="button" class="filter-btn" data-filter="intelligence" role="tab" aria-selected="false">
-              Clinic Intelligence <span class="count-badge" id="count-intelligence">1</span>
-            </button>
-            <button type="button" class="filter-btn" data-filter="pasien" role="tab" aria-selected="false">
-              Pasien &amp; Retensi <span class="count-badge" id="count-pasien">2</span>
-            </button>
-            <button type="button" class="filter-btn" data-filter="pasar" role="tab" aria-selected="false">
-              Kompetitor &amp; Pasar <span class="count-badge" id="count-pasar">2</span>
-            </button>
-            <button type="button" class="filter-btn" data-filter="strategi" role="tab" aria-selected="false">
-              Strategi &amp; Roadmap <span class="count-badge" id="count-strategi">1</span>
-            </button>
+        <!-- SAMPLE SHOWCASE NOTICE BANNER -->
+        <aside class="reports-notice-banner" role="note" aria-label="Catatan Sampel Laporan">
+          <div class="notice-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
           </div>
-
-          <div class="reports-search-box">
-            <span class="reports-search-icon" aria-hidden="true">🔍</span>
-            <input type="search" id="report-search-input" placeholder="Cari laporan..." aria-label="Cari laporan" />
-            <button type="button" class="reports-search-clear" id="report-search-clear" aria-label="Hapus pencarian">✕</button>
+          <div class="notice-body">
+            <span class="notice-tag">Sample Showcase</span>
+            <p class="notice-text">
+              Laporan pada showcase ini merupakan <strong>format sampel</strong>. Hasil laporan untuk setiap klinik dapat berbeda secara signifikan tergantung pada kebutuhan strategis serta ketersediaan bahan data pendukung dari masing-masing klinik.
+            </p>
           </div>
-        </div>
-
-        <div class="reports-status-bar">
-          <span class="reports-count-text">Menampilkan <b id="visible-count">6</b> laporan riset</span>
-          <span class="reports-hint">Arahkan kursor ke gambar untuk zoom &amp; melihat detail informasi</span>
-        </div>
+          <div class="notice-hint" aria-hidden="true">
+            <span>Arahkan kursor ke gambar untuk zoom &amp; detail info ↗</span>
+          </div>
+        </aside>
 
         <!-- VISUAL SHOWCASE GRID -->
         <section class="reports-grid" id="reports-grid" aria-label="Showcase Laporan Riset INSIDER">
@@ -138,7 +126,7 @@
             data-title="Clinic Intelligence Report"
             data-category-name="Executive Intelligence"
             data-date="Periode 6-12 Bulan"
-            data-img="assets/images/reports/clinic-intelligence-report.png"
+            data-img="assets/images/reports/clinic-intelligence-report.webp"
             data-stat="8 Area"
             data-stat-label="Analisis Komprehensif Klinik"
             data-summary="Menggabungkan analisis internal klinik, kondisi pasar, perilaku pasien, dan lingkungan kompetitif untuk memberikan gambaran menyeluruh dan rekomendasi yang relevan dengan visi Anda."
@@ -146,11 +134,7 @@
             data-outcomes="Menjawab siapa sebenarnya pasien terbaik klinik Anda|Mengidentifikasi peluang pertumbuhan terbesar dan untapped market|Menilai aspek operasional yang berjalan baik dan area yang perlu segera diperbaiki|Menentukan arah fokus pertumbuhan klinik yang terarah dan terukur">
             
             <div class="report-image-wrap">
-              <img src="assets/images/reports/clinic-intelligence-report.png" alt="Cover Clinic Intelligence Report" class="report-img" loading="lazy" />
-              <!-- WATERMARK LOGO INSIDER -->
-              <div class="report-watermark" aria-hidden="true">
-                <img src="assets/images/insider-primary-logo.png" alt="" class="watermark-logo" />
-              </div>
+              <img src="assets/images/reports/clinic-intelligence-report.webp" alt="Cover Clinic Intelligence Report" class="report-img" loading="lazy" />
               <span class="report-badge-pill">Executive Intelligence</span>
               <span class="report-format-pill"><span class="format-dot" aria-hidden="true"></span> Sample Report</span>
 
@@ -183,7 +167,7 @@
             data-title="Patient Insight Report"
             data-category-name="Pasien & Retensi"
             data-date="Periode Jan - Jun 2026"
-            data-img="assets/images/reports/patient-insight-report.png"
+            data-img="assets/images/reports/patient-insight-report.webp"
             data-stat="3.482 Pasien"
             data-stat-label="Total Pasien & Pola Kunjungan"
             data-summary="Ubah data pasien menjadi insight yang membantu Anda mengambil keputusan bisnis dengan lebih percaya diri. Temukan siapa pasien terbaik Anda, layanan yang paling potensial, peluang pertumbuhan yang tersembunyi, serta area yang perlu segera diperbaiki — semuanya dirangkum dalam satu laporan yang mudah dipahami dan dapat langsung ditindaklanjuti. Pertumbuhan yang berkelanjutan dimulai dari pemahaman yang lebih baik terhadap klinik Anda sendiri."
@@ -191,11 +175,7 @@
             data-outcomes="Pemetaan segmentasi pasien: Loyal (12%), Occasional (40%), One-Time Visitor (48%)|Analisis sebaran demografi usia, gender, dan 5 area domisili pasien utama|Monitoring repeat rate dan performa kunjungan per dokter spesialis|Strategi aktivasi recall reminder untuk 1.240 lost patients (potensi Rp 186 Jt)">
             
             <div class="report-image-wrap">
-              <img src="assets/images/reports/patient-insight-report.png" alt="Cover Patient Insight Report" class="report-img" loading="lazy" />
-              <!-- WATERMARK LOGO INSIDER -->
-              <div class="report-watermark" aria-hidden="true">
-                <img src="assets/images/insider-primary-logo.png" alt="" class="watermark-logo" />
-              </div>
+              <img src="assets/images/reports/patient-insight-report.webp" alt="Cover Patient Insight Report" class="report-img" loading="lazy" />
               <span class="report-badge-pill">Patient Insight</span>
               <span class="report-format-pill"><span class="format-dot" aria-hidden="true"></span> Insight Report</span>
 
@@ -227,7 +207,7 @@
             data-title="Competitor Analysis Report"
             data-category-name="Kompetitor & Pasar"
             data-date="Periode Jan - Jun 2026"
-            data-img="assets/images/reports/competitor-analysis.png"
+            data-img="assets/images/reports/competitor-analysis.webp"
             data-stat="5 Kompetitor"
             data-stat-label="Analisis Komparatif Pasar"
             data-summary="Pahami posisi klinik Anda di tengah persaingan dan temukan peluang pertumbuhan yang belum dimanfaatkan. Kami menganalisis kompetitor di sekitar Anda, membandingkan layanan, strategi pemasaran, positioning, dan kekuatan mereka di pasar. Hasilnya adalah insight yang membantu Anda mengambil keputusan bisnis berbasis fakta — bukan sekadar asumsi. Memahami kompetitor bukan tentang meniru mereka, tetapi menemukan ruang untuk tumbuh dengan cara yang berbeda."
@@ -235,11 +215,7 @@
             data-outcomes="Analisis kompetitor utama di sekitar radius operasional klinik Anda|Perbandingan variasi layanan, tarif harga, dokter spesialis, dan reputasi review|Audit kanal promosi digital kompetitor (Instagram, TikTok, Google Ads)|Identifikasi area diferensiasi unik & rekomendasi pertumbuhan yang dapat ditindaklanjuti">
             
             <div class="report-image-wrap">
-              <img src="assets/images/reports/competitor-analysis.png" alt="Cover Competitor Analysis Report" class="report-img" loading="lazy" />
-              <!-- WATERMARK LOGO INSIDER -->
-              <div class="report-watermark" aria-hidden="true">
-                <img src="assets/images/insider-primary-logo.png" alt="" class="watermark-logo" />
-              </div>
+              <img src="assets/images/reports/competitor-analysis.webp" alt="Cover Competitor Analysis Report" class="report-img" loading="lazy" />
               <span class="report-badge-pill">Kompetitor &amp; Pasar</span>
               <span class="report-format-pill"><span class="format-dot" aria-hidden="true"></span> Market Audit</span>
 
@@ -271,7 +247,7 @@
             data-title="Market Opportunity & SWOT Report"
             data-category-name="Kompetitor & Pasar"
             data-date="Periode Jan - Jun 2026"
-            data-img="assets/images/reports/market-opportunity-swot.png"
+            data-img="assets/images/reports/market-opportunity-swot.webp"
             data-stat="85.000 Pasar"
             data-stat-label="Potensi Pasien & Tren Pasar"
             data-summary="Market Opportunity & SWOT Report membantu Anda menjawab: 'Di mana peluang terbesar klinik saya, apa yang membuat saya unggul, dan langkah apa yang paling masuk akal untuk mendorong pertumbuhan berikutnya?' Karena pertumbuhan yang berkelanjutan tidak dimulai dari menambah aktivitas, tetapi dari memahami peluang yang paling tepat untuk dikejar. Sejalan dengan pendekatan INSIDER (Insight, Strategy, Sustainable Growth)."
@@ -279,11 +255,7 @@
             data-outcomes="Pemetaan potensi 85.000 pasien potensial di area utama klinik dengan pertumbuhan pasar +12%/tahun|Analisis SWOT mendalam: Strengths, Weaknesses, Opportunities, dan Threats|Evaluasi pangsa pasar per kategori layanan (Umum, Gigi, Kulit & Estetika, MCU)|Identifikasi segmen pasar paling potensial: wanita usia 25-40 tahun dan keluarga muda">
             
             <div class="report-image-wrap">
-              <img src="assets/images/reports/market-opportunity-swot.png" alt="Cover Market Opportunity & SWOT Report" class="report-img" loading="lazy" />
-              <!-- WATERMARK LOGO INSIDER -->
-              <div class="report-watermark" aria-hidden="true">
-                <img src="assets/images/insider-primary-logo.png" alt="" class="watermark-logo" />
-              </div>
+              <img src="assets/images/reports/market-opportunity-swot.webp" alt="Cover Market Opportunity & SWOT Report" class="report-img" loading="lazy" />
               <span class="report-badge-pill">Market &amp; SWOT</span>
               <span class="report-format-pill"><span class="format-dot" aria-hidden="true"></span> Strategic SWOT</span>
 
@@ -315,7 +287,7 @@
             data-title="Patient Journey Map Report"
             data-category-name="Pasien & Retensi"
             data-date="Customer Experience Audit"
-            data-img="assets/images/reports/patient-journey-map.png"
+            data-img="assets/images/reports/patient-journey-map.webp"
             data-stat="7 Tahapan"
             data-stat-label="Pemetaan Alur Pasien Lengkap"
             data-summary="Lihat apa yang sebenarnya terjadi setelah pasien datang ke klinik Anda. Ketahui bagaimana pasien pertama kali datang, layanan yang mereka gunakan, kapan mereka kembali, dan di titik mana mereka berhenti berkunjung. Temukan kebocoran, peluang, dan potensi pertumbuhan yang selama ini tersembunyi di balik data klinik Anda. Hampir setengah dari pasien pertama tidak kembali untuk kunjungan kedua — identifikasi titik kritisnya bersama kami."
@@ -323,11 +295,7 @@
             data-outcomes="Pemetaan visual 7 tahapan perjalanan pasien: Awareness, Consideration, First Visit, Treatment & Care, Repeat Visit, Loyal Patient, Advocacy|Analisis touchpoint utama, tujuan pasien, perilaku, emosi, dan pain point di setiap tahap|Identifikasi tingkat konversi: First Visit ke Repeat Visit (73%) vs Repeat Visit ke Loyal (51%)|Rekomendasi perbaikan pengalaman pasien, reminder berkala, dan program membership">
             
             <div class="report-image-wrap">
-              <img src="assets/images/reports/patient-journey-map.png" alt="Cover Patient Journey Map Report" class="report-img" loading="lazy" />
-              <!-- WATERMARK LOGO INSIDER -->
-              <div class="report-watermark" aria-hidden="true">
-                <img src="assets/images/insider-primary-logo.png" alt="" class="watermark-logo" />
-              </div>
+              <img src="assets/images/reports/patient-journey-map.webp" alt="Cover Patient Journey Map Report" class="report-img" loading="lazy" />
               <span class="report-badge-pill">Patient Journey</span>
               <span class="report-format-pill"><span class="format-dot" aria-hidden="true"></span> Journey Map</span>
 
@@ -359,7 +327,7 @@
             data-title="Growth Blueprint & Roadmap Report"
             data-category-name="Strategi & Roadmap"
             data-date="12-Month Action Plan"
-            data-img="assets/images/reports/growth-blueprint-roadmap.png"
+            data-img="assets/images/reports/growth-blueprint-roadmap.webp"
             data-stat="4 Fase"
             data-stat-label="Roadmap Implementasi 12 Bulan"
             data-summary="Dari Insight Menjadi Arah yang Jelas. Growth Blueprint & Roadmap membantu Anda memahami peluang terbesar, menentukan prioritas yang tepat, dan menyusun langkah pertumbuhan yang realistis untuk 12 bulan ke depan. Bukan sekadar laporan, bukan sekadar ide. Sebuah rencana pertumbuhan yang dirancang berdasarkan kondisi nyata klinik Anda, agar setiap keputusan yang diambil lebih terarah, terukur, dan berdampak."
@@ -367,11 +335,7 @@
             data-outcomes="Growth Ambition & Target 12 Bulan: +40% Pasien Baru, +30% Revenue, 85% Kepuasan Pasien, 20% Efisiensi|4 Strategic Priorities: Patient Retention, Service Development, Brand Awareness, Operational Excellence|12-Month Roadmap terukur dalam 4 fase: Q1 Fondasi, Q2 Eksekusi, Q3 Ekspansi, Q4 Skala|Growth Opportunity Map (Impact vs Effort) dan Capability & Resource Plan (internal vs partner)">
             
             <div class="report-image-wrap">
-              <img src="assets/images/reports/growth-blueprint-roadmap.png" alt="Cover Growth Blueprint & Roadmap Report" class="report-img" loading="lazy" />
-              <!-- WATERMARK LOGO INSIDER -->
-              <div class="report-watermark" aria-hidden="true">
-                <img src="assets/images/insider-primary-logo.png" alt="" class="watermark-logo" />
-              </div>
+              <img src="assets/images/reports/growth-blueprint-roadmap.webp" alt="Cover Growth Blueprint & Roadmap Report" class="report-img" loading="lazy" />
               <span class="report-badge-pill">Growth Blueprint</span>
               <span class="report-format-pill"><span class="format-dot" aria-hidden="true"></span> Roadmap Plan</span>
 
@@ -397,13 +361,6 @@
 
         </section>
 
-        <!-- State Kosong jika pencarian tidak menemukan hasil -->
-        <div class="reports-empty" id="reports-empty" role="status">
-          <h3>Tidak ada laporan yang sesuai</h3>
-          <p>Coba gunakan kata kunci lain seperti "pasien", "kompetitor", "SWOT", "roadmap", atau pilih filter "Semua".</p>
-          <button type="button" class="filter-btn is-active" id="reset-filter-btn">Kembali ke Semua</button>
-        </div>
-
       </div>
     </main>
 
@@ -424,9 +381,6 @@
           <div class="modal-media-wrap">
             <a id="modal-img-link" href="#" target="_blank" rel="noopener noreferrer" title="Klik untuk membuka gambar resolusi penuh di tab baru">
               <img id="modal-img" src="" alt="Pratinjau Resolusi Penuh Laporan" />
-              <div class="modal-watermark" aria-hidden="true">
-                <img src="assets/images/insider-primary-logo.png" alt="" class="watermark-logo" />
-              </div>
               <span class="modal-media-hint" aria-hidden="true">🔍 Klik untuk resolusi penuh ↗</span>
             </a>
           </div>

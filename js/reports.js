@@ -1,17 +1,11 @@
 /**
  * INSIDER Healthcare Growth Partner
- * Reports Page Interactivity (Filtering, Search, Modal Lightbox)
- * Uses real report samples from "REPORTS sample"
+ * Reports Showcase Interactivity (Modal Lightbox & Image Preview)
+ * Real report samples with permanently watermarked assets
  */
 
 document.addEventListener("DOMContentLoaded", () => {
   const cards = Array.from(document.querySelectorAll(".report-card"));
-  const filterBtns = Array.from(document.querySelectorAll(".filter-btn[data-filter]"));
-  const searchInput = document.getElementById("report-search-input");
-  const searchClearBtn = document.getElementById("report-search-clear");
-  const visibleCountEl = document.getElementById("visible-count");
-  const emptyStateEl = document.getElementById("reports-empty");
-  const resetFilterBtn = document.getElementById("reset-filter-btn");
 
   // Modal elements
   const modal = document.getElementById("report-modal");
@@ -26,122 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalOutcomes = document.getElementById("modal-outcomes");
   const modalStatValue = document.getElementById("modal-stat-value");
   const modalStatLabel = document.getElementById("modal-stat-label");
-  const modalDummyDownload = document.getElementById("modal-dummy-download");
-
-  let currentCategory = "all";
-  let currentSearchQuery = "";
-
-  // Dynamic Count Calculation
-  const updateCounts = () => {
-    const counts = {
-      all: cards.length,
-      intelligence: 0,
-      pasien: 0,
-      pasar: 0,
-      strategi: 0
-    };
-
-    cards.forEach((card) => {
-      const cat = card.getAttribute("data-category");
-      if (counts[cat] !== undefined) {
-        counts[cat]++;
-      }
-    });
-
-    Object.keys(counts).forEach((key) => {
-      const el = document.getElementById(`count-${key}`);
-      if (el) el.textContent = String(counts[key]);
-    });
-  };
-
-  updateCounts();
-
-  // Filter & Search Handler
-  const applyFilterAndSearch = () => {
-    let visibleCount = 0;
-
-    cards.forEach((card) => {
-      const cardCategory = card.getAttribute("data-category") || "";
-      const cardTitle = (card.getAttribute("data-title") || "").toLowerCase();
-      const cardSummary = (card.getAttribute("data-summary") || "").toLowerCase();
-      const cardCatName = (card.getAttribute("data-category-name") || "").toLowerCase();
-
-      const matchesCategory = (currentCategory === "all" || cardCategory === currentCategory);
-      const matchesSearch = !currentSearchQuery || 
-        cardTitle.includes(currentSearchQuery) || 
-        cardSummary.includes(currentSearchQuery) || 
-        cardCatName.includes(currentSearchQuery);
-
-      if (matchesCategory && matchesSearch) {
-        card.style.display = "flex";
-        visibleCount++;
-      } else {
-        card.style.display = "none";
-      }
-    });
-
-    if (visibleCountEl) {
-      visibleCountEl.textContent = String(visibleCount);
-    }
-
-    if (emptyStateEl) {
-      emptyStateEl.style.display = visibleCount === 0 ? "block" : "none";
-    }
-  };
-
-  // Filter Buttons Click
-  filterBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      filterBtns.forEach((b) => {
-        b.classList.remove("is-active");
-        b.setAttribute("aria-selected", "false");
-      });
-      btn.classList.add("is-active");
-      btn.setAttribute("aria-selected", "true");
-      currentCategory = btn.getAttribute("data-filter") || "all";
-      applyFilterAndSearch();
-    });
-  });
-
-  // Search Input Event
-  if (searchInput) {
-    searchInput.addEventListener("input", (e) => {
-      currentSearchQuery = e.target.value.trim().toLowerCase();
-      if (searchClearBtn) {
-        searchClearBtn.style.display = currentSearchQuery ? "block" : "none";
-      }
-      applyFilterAndSearch();
-    });
-  }
-
-  // Clear Search Button
-  if (searchClearBtn && searchInput) {
-    searchClearBtn.addEventListener("click", () => {
-      searchInput.value = "";
-      currentSearchQuery = "";
-      searchClearBtn.style.display = "none";
-      searchInput.focus();
-      applyFilterAndSearch();
-    });
-  }
-
-  // Reset Filter Button (Empty state)
-  if (resetFilterBtn) {
-    resetFilterBtn.addEventListener("click", () => {
-      currentCategory = "all";
-      currentSearchQuery = "";
-      if (searchInput) searchInput.value = "";
-      if (searchClearBtn) searchClearBtn.style.display = "none";
-      
-      filterBtns.forEach((b) => {
-        const isAll = b.getAttribute("data-filter") === "all";
-        b.classList.toggle("is-active", isAll);
-        b.setAttribute("aria-selected", String(isAll));
-      });
-
-      applyFilterAndSearch();
-    });
-  }
 
   // Open Modal function
   const openModal = (card) => {
@@ -241,13 +119,6 @@ document.addEventListener("DOMContentLoaded", () => {
       closeModal();
     }
   });
-
-  // Simulated download button
-  if (modalDummyDownload) {
-    modalDummyDownload.addEventListener("click", () => {
-      alert("📥 Simulasi Unduh Laporan: Dokumen laporan resmi INSIDER disusun secara khusus berdasarkan data aktual klinik Anda. Silakan hubungi tim kami untuk mendiskusikan implementasi laporan ini.");
-    });
-  }
 
   // Smooth scroll back to top
   const backTop = document.getElementById("reports-back-top");
