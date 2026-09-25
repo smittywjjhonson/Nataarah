@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css?v=20260925-4" />
-    <link rel="stylesheet" href="css/service-pages.css?v=20260925-4" />
-    <script src="js/main.js?v=20260925-4" defer></script>
+    <link rel="stylesheet" href="css/style.css?v=20260925-10" />
+    <link rel="stylesheet" href="css/service-pages.css?v=20260925-10" />
+    <script src="js/main.js?v=20260925-10" defer></script>
   </head>
   <body class="service-page">
     <a class="skip-link" href="#main">Lewati ke konten</a>
@@ -23,7 +23,58 @@
         <a href="index.html#tantangan">Tantangan</a><a href="index.html#pendekatan">Pendekatan</a>
         <div class="nav-dropdown">
           <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="services-menu">Layanan <span class="dropdown-caret" aria-hidden="true">⌄</span></button>
-          <div class="dropdown-menu" id="services-menu"><a href="core-service.html"><span class="dropdown-item-icon"><img src="assets/icons/core-service.svg" alt="" /></span><span>Core Service</span><small>Growth partnership dari diagnosis hingga implementasi</small></a><a href="enabler-service.html"><span class="dropdown-item-icon"><img src="assets/icons/enabler-service.svg" alt="" /></span><span>Enabler Service</span><small>Dukungan marketing, sistem, tim, dan operasional</small></a></div>
+          <div class="dropdown-menu" id="services-menu">
+            <div class="dropdown-head">
+              <span class="dropdown-head-label">Katalog Layanan</span>
+              <span class="dropdown-head-tag">Healthcare Growth</span>
+            </div>
+            <div class="dropdown-items">
+              <a href="core-service.html" class="dropdown-item" aria-current="page">
+                <div class="dropdown-item-icon" aria-hidden="true">
+                  <img src="assets/icons/core-service.svg" alt="" width="24" height="24" />
+                </div>
+                <div class="dropdown-item-body">
+                  <div class="dropdown-item-top">
+                    <span class="dropdown-badge primary">Layanan Utama</span>
+                    <strong class="dropdown-item-title">Core Service</strong>
+                    <span class="dropdown-arrow" aria-hidden="true">↗</span>
+                  </div>
+                  <p class="dropdown-item-desc">Growth partnership dari diagnosis mendalam, blueprint, hingga implementasi.</p>
+                  <div class="dropdown-pills" aria-hidden="true">
+                    <span>Discovery</span>
+                    <span>Assessment</span>
+                    <span>Blueprint</span>
+                    <span>Partnership</span>
+                  </div>
+                </div>
+              </a>
+              <a href="enabler-service.html" class="dropdown-item">
+                <div class="dropdown-item-icon" aria-hidden="true">
+                  <img src="assets/icons/enabler-service.svg" alt="" width="24" height="24" />
+                </div>
+                <div class="dropdown-item-body">
+                  <div class="dropdown-item-top">
+                    <span class="dropdown-badge secondary">Layanan Pendukung</span>
+                    <strong class="dropdown-item-title">Enabler Service</strong>
+                    <span class="dropdown-arrow" aria-hidden="true">↗</span>
+                  </div>
+                  <p class="dropdown-item-desc">Dukungan praktis untuk marketing, sistem digital, standarisasi SOP, dan tim.</p>
+                  <div class="dropdown-pills" aria-hidden="true">
+                    <span>Marketing & Brand</span>
+                    <span>Digital & System</span>
+                    <span>Team & SOP</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="dropdown-footer">
+              <div class="dropdown-footer-note">
+                <span class="dropdown-footer-icon" aria-hidden="true">✳</span>
+                <span>Disesuaikan dengan konteks klinik Anda</span>
+              </div>
+              <a href="index.html#cara-kerja" class="dropdown-footer-link">Alur Kerja ↗</a>
+            </div>
+          </div>
         </div>
         <a class="nav-cta" href="index.html#cara-kerja">Cara kerja <span aria-hidden="true">↗</span></a>
       </nav>
@@ -44,7 +95,42 @@
         <p>Kami menggabungkan pengalaman pemilik klinik, data, analisis, dan perspektif eksternal. Hasil setiap tahap menjadi dasar untuk menentukan langkah berikutnya secara kolaboratif.</p>
       </section>
 
-      <section class="stage-list section-wrap" id="tahapan" aria-label="Empat tahap Core Service INSIDER">
+      <!-- Visual Illustration Overview Section (Minimal Text) -->
+      <section class="core-infographic-section section-wrap" id="alur-layanan" aria-labelledby="infographic-title">
+        <div class="infographic-intro visual-minimal">
+          <p class="eyebrow"><span class="eyebrow-mark"></span> Alur Layanan</p>
+          <h2 id="infographic-title">Empat Langkah Menuju <em>Pertumbuhan</em></h2>
+        </div>
+
+        <figure class="infographic-visual-card">
+          <div class="infographic-img-container">
+            <img 
+              src="assets/images/core-service-process-infographic.png" 
+              alt="Ilustrasi Visual Alur 4 Tahap Core Service INSIDER: Discovery, Assessment, Blueprint, dan Partnership" 
+              loading="eager"
+              class="infographic-image"
+            />
+          </div>
+        </figure>
+
+        <!-- Detail Toggle Action (Minimal & Direct) -->
+        <div class="detail-toggle-action visual-minimal-action">
+          <button 
+            type="button" 
+            class="detail-expand-btn" 
+            id="toggle-detail-btn"
+            aria-expanded="false" 
+            aria-controls="tahapan-detail-wrapper"
+          >
+            <span class="btn-text">Lihat Detail Tahapan Layanan</span>
+            <span class="btn-icon" aria-hidden="true">↓</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Detailed Stages Section (Default Hidden) -->
+      <div class="tahapan-detail-wrapper" id="tahapan-detail-wrapper" hidden>
+        <section class="stage-list section-wrap" id="tahapan" aria-label="Empat tahap Core Service INSIDER">
         <!-- Stage 01 -->
         <article class="stage-detail">
           <div class="stage-meta">
@@ -162,6 +248,15 @@
         <span class="partnership-note-icon" aria-hidden="true">↗</span>
         <div><p class="process-label">MODEL KERJA SAMA</p><h3>Project yang disepakati bersama.</h3><p>Growth Partnership disusun berdasarkan kebutuhan klinik, dengan ruang lingkup serta timeline yang dibicarakan bersama. Pembayaran dapat dijadwalkan per bulan mengikuti timeline proyek.</p></div>
       </aside>
+
+        <div class="detail-collapse-bottom section-wrap">
+          <button type="button" class="detail-collapse-btn" id="collapse-detail-bottom-btn">
+            <span>Sembunyikan Detail Tahapan</span>
+            <span aria-hidden="true">↑</span>
+          </button>
+        </div>
+      </div>
+
       <nav class="detail-bottom section-wrap" aria-label="Navigasi layanan"><p>Butuh dukungan tambahan di luar pendampingan utama?</p><a href="enabler-service.html">Lihat Enabler Service <span aria-hidden="true">↗</span></a></nav>
     </main>
     <footer class="site-footer"><a class="footer-brand" href="index.html"><img src="assets/images/insider-primary-logo.png" alt="INSIDER Healthcare Growth Partner" /></a><p>The journey from insight to sustainable growth.</p><a href="index.html" class="back-top">Kembali ke beranda ↗</a><small>© <span id="year"></span> INSIDER. Hak cipta dilindungi.</small></footer>
