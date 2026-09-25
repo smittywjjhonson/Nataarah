@@ -311,16 +311,149 @@
 
 /* Enabler Category Cards */
 .enabler-category {
-  margin-bottom: 56px;
+  margin-bottom: 0;
   padding: 44px 48px;
   border: 1px solid #dde5d6;
   border-radius: 28px;
   background: #ffffff;
   box-shadow: 0 4px 28px rgba(14, 58, 47, 0.035);
   scroll-margin-top: 90px;
+  position: relative;
+  overflow: hidden;
+}
+.enabler-category::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+#marketing::before {
+  background: linear-gradient(90deg, #8c9e6d, #4a7c6f);
+}
+#digital::before {
+  background: linear-gradient(90deg, #4a7c6f, #0e3a2f);
+}
+#operational::before {
+  background: linear-gradient(90deg, #0e3a2f, #8c9e6d);
 }
 .enabler-category:nth-of-type(even) {
   background: #fbfdf9;
+}
+
+/* Pillar Topic Transition Divider */
+.pillar-transition-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 64px 0;
+  width: 100%;
+}
+.transition-divider-track {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 18px;
+}
+.transition-divider-track::before,
+.transition-divider-track::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #8c9e6d;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+.transition-line {
+  flex: 1;
+  height: 2.5px;
+  border-radius: 999px;
+}
+.transition-line.left {
+  background: linear-gradient(90deg, rgba(140, 158, 109, 0.2) 0%, rgba(140, 158, 109, 0.6) 45%, #7a945e 100%);
+}
+.transition-line.right {
+  background: linear-gradient(90deg, #7a945e 0%, rgba(140, 158, 109, 0.6) 55%, rgba(140, 158, 109, 0.2) 100%);
+}
+.transition-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 24px 12px 16px;
+  background: #ffffff;
+  border: 1.5px solid #cfe0c3;
+  border-radius: 999px;
+  box-shadow: 0 6px 22px rgba(14, 58, 47, 0.07), 0 2px 6px rgba(14, 58, 47, 0.03);
+  text-decoration: none;
+  color: inherit;
+  flex-shrink: 0;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+  position: relative;
+}
+.transition-pill:hover {
+  transform: translateY(-3px);
+  border-color: #a3bc94;
+  box-shadow: 0 12px 30px rgba(14, 58, 47, 0.12), 0 3px 8px rgba(14, 58, 47, 0.05);
+}
+.transition-pill-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #eef5e9;
+  border: 1px solid #d4dfcb;
+  display: grid;
+  place-items: center;
+  color: var(--green);
+  flex-shrink: 0;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.transition-spark {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.transition-pill:hover .transition-pill-icon {
+  background: #e2edd9;
+  transform: rotate(15deg);
+}
+.transition-pill-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 3px;
+}
+.transition-eyebrow {
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6b7e52;
+}
+.transition-heading {
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--green-deep);
+  letter-spacing: -0.02em;
+}
+.transition-arrow-down {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--green);
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-size: 0.92rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  margin-left: 6px;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+.transition-pill:hover .transition-arrow-down {
+  transform: translateY(3px);
+  background: var(--green-deep);
 }
 .category-head {
   margin-bottom: 36px;
@@ -695,7 +828,47 @@
   .enabler-category {
     padding: 28px 22px;
     border-radius: 20px;
-    margin-bottom: 36px;
+    margin-bottom: 0;
+  }
+  .pillar-transition-divider {
+    margin: 44px 0;
+  }
+  .transition-divider-track {
+    gap: 8px;
+  }
+  .transition-divider-track::before,
+  .transition-divider-track::after {
+    display: none;
+  }
+  .transition-line {
+    min-width: 14px;
+    height: 2px;
+  }
+  .transition-pill {
+    padding: 8px 12px 8px 10px;
+    gap: 8px;
+    border-radius: 999px;
+    max-width: calc(100% - 36px);
+  }
+  .transition-pill-icon {
+    width: 26px;
+    height: 26px;
+    font-size: 0.8rem;
+  }
+  .transition-eyebrow {
+    font-size: 0.65rem;
+  }
+  .transition-heading {
+    font-size: 0.86rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .transition-arrow-down {
+    width: 24px;
+    height: 24px;
+    font-size: 0.72rem;
+    margin-left: 0;
   }
   .category-head {
     display: flex;
