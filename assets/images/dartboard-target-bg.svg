@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
+  <defs>
+    <filter id="dartBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+    <linearGradient id="barrelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#144b3e" />
+      <stop offset="35%" stop-color="#2a6d5c" />
+      <stop offset="70%" stop-color="#0e3a2f" />
+      <stop offset="100%" stop-color="#08251e" />
+    </linearGradient>
+    <linearGradient id="shaftGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5e6d45" />
+      <stop offset="50%" stop-color="#a7b47a" />
+      <stop offset="100%" stop-color="#7f9161" />
+    </linearGradient>
+    <linearGradient id="flightGradTop" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a7b47a" stop-opacity="0.85" />
+      <stop offset="55%" stop-color="#7f9161" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#0e3a2f" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="flightGradBottom" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a7b47a" stop-opacity="0.85" />
+      <stop offset="55%" stop-color="#7f9161" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#0e3a2f" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="500" cy="500" r="455" fill="none" stroke="#a7b47a" stroke-opacity="0.18" stroke-width="1.2" stroke-dasharray="4 6" />
+  <circle cx="500" cy="500" r="485" fill="none" stroke="#a7b47a" stroke-opacity="0.12" stroke-width="1.2" stroke-dasharray="4 6" />
+  
+    <line x1="5" y1="500" x2="60" y2="500" stroke="#a7b47a" stroke-opacity="0.32" stroke-width="1.5" />
+    <line x1="940" y1="500" x2="995" y2="500" stroke="#a7b47a" stroke-opacity="0.32" stroke-width="1.5" />
+    <line x1="500" y1="5" x2="500" y2="60" stroke="#a7b47a" stroke-opacity="0.32" stroke-width="1.5" />
+    <line x1="500" y1="940" x2="500" y2="995" stroke="#a7b47a" stroke-opacity="0.32" stroke-width="1.5" />
+  
+  <circle cx="500" cy="500" r="425" fill="#0e3a2f" fill-opacity="0.015" stroke="#a7b47a" stroke-opacity="0.25" stroke-width="1.5" />
+  <circle cx="500" cy="500" r="405" fill="#0e3a2f" fill-opacity="0.025" stroke="#0e3a2f" stroke-opacity="0.12" stroke-width="1" />
+  <path d="M 450.25384011720655 185.9151076907462 A 318 318 0 0 1 549.7461598827934 185.9151076907462 L 534.4155823088508 282.70856506906966 A 220 220 0 0 0 465.58441769114916 282.7085650690697 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 469.49527931715494 307.4007735839482 A 195 195 0 0 1 530.504720682845 307.40077358394814 L 507.1959853918506 454.5663363326237 A 46 46 0 0 0 492.8040146081494 454.5663363326237 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 465.58441769114916 282.7085650690697 A 220 220 0 0 1 534.4155823088508 282.70856506906966 L 530.504720682845 307.40077358394814 A 195 195 0 0 0 469.49527931715494 307.4007735839482 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 446.0301095611203 159.24752249467753 A 345 345 0 0 1 553.9698904388797 159.24752249467747 L 549.7461598827934 185.9151076907462 A 318 318 0 0 0 450.25384011720655 185.9151076907462 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="492.8040146081494" y1="454.5663363326237" x2="446.0301095611203" y2="159.24752249467753" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="500.0" y="125.0" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        20
+      </text>
+    
+  <path d="M 549.7461598827934 185.9151076907462 A 318 318 0 0 1 644.3689789171759 216.65992530809905 L 599.8779099427003 303.9785646785591 A 220 220 0 0 0 534.4155823088508 282.70856506906966 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 530.504720682845 307.40077358394814 A 195 195 0 0 1 588.5281474492117 326.2537277832683 L 520.8835629880192 459.01369988733506 A 46 46 0 0 0 507.1959853918506 454.5663363326237 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 534.4155823088508 282.70856506906966 A 220 220 0 0 1 599.8779099427003 303.9785646785591 L 588.5281474492117 326.2537277832683 A 195 195 0 0 0 530.504720682845 307.40077358394814 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 553.9698904388797 159.24752249467747 A 345 345 0 0 1 656.6267224101437 192.6027491550131 L 644.3689789171759 216.65992530809905 A 318 318 0 0 0 549.7461598827934 185.9151076907462 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="507.1959853918506" y1="454.5663363326237" x2="553.9698904388797" y2="159.24752249467747" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="615.9" y="143.4" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        1
+      </text>
+    
+  <path d="M 644.3689789171759 216.65992530809905 A 318 318 0 0 1 724.8599564173221 275.1400435826779 L 655.5634918610405 344.43650813895954 A 220 220 0 0 0 599.8779099427003 303.9785646785591 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 588.5281474492117 326.2537277832683 A 195 195 0 0 1 637.8858223313767 362.11417766862326 L 532.5269119345812 467.47308806541884 A 46 46 0 0 0 520.8835629880192 459.01369988733506 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 599.8779099427003 303.9785646785591 A 220 220 0 0 1 655.5634918610405 344.43650813895954 L 637.8858223313767 362.11417766862326 A 195 195 0 0 0 588.5281474492117 326.2537277832683 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 656.6267224101437 192.6027491550131 A 345 345 0 0 1 743.9518395093589 256.0481604906411 L 724.8599564173221 275.1400435826779 A 318 318 0 0 0 644.3689789171759 216.65992530809905 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="520.8835629880192" y1="459.01369988733506" x2="656.6267224101437" y2="192.6027491550131" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="720.4" y="196.6" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        18
+      </text>
+    
+  <path d="M 724.8599564173221 275.1400435826779 A 318 318 0 0 1 783.340074691901 355.63102108282413 L 696.021435321441 400.1220900572997 A 220 220 0 0 0 655.5634918610405 344.43650813895954 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 637.8858223313767 362.11417766862326 A 195 195 0 0 1 673.7462722167318 411.4718525507884 L 540.9863001126649 479.11643701198085 A 46 46 0 0 0 532.5269119345812 467.47308806541884 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 655.5634918610405 344.43650813895954 A 220 220 0 0 1 696.021435321441 400.1220900572997 L 673.7462722167318 411.4718525507884 A 195 195 0 0 0 637.8858223313767 362.11417766862326 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 743.9518395093589 256.0481604906411 A 345 345 0 0 1 807.397250844987 343.37327758985634 L 783.340074691901 355.63102108282413 A 318 318 0 0 0 724.8599564173221 275.1400435826779 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="532.5269119345812" y1="467.47308806541884" x2="743.9518395093589" y2="256.0481604906411" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="803.4" y="279.6" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        4
+      </text>
+    
+  <path d="M 783.340074691901 355.63102108282413 A 318 318 0 0 1 814.0848923092537 450.2538401172066 L 717.2914349309303 465.5844176911492 A 220 220 0 0 0 696.021435321441 400.1220900572997 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 673.7462722167318 411.4718525507884 A 195 195 0 0 1 692.5992264160518 469.495279317155 L 545.4336636673763 492.8040146081494 A 46 46 0 0 0 540.9863001126649 479.11643701198085 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 696.021435321441 400.1220900572997 A 220 220 0 0 1 717.2914349309303 465.5844176911492 L 692.5992264160518 469.495279317155 A 195 195 0 0 0 673.7462722167318 411.4718525507884 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 807.397250844987 343.37327758985634 A 345 345 0 0 1 840.7524775053225 446.03010956112036 L 814.0848923092537 450.2538401172066 A 318 318 0 0 0 783.340074691901 355.63102108282413 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="540.9863001126649" y1="479.11643701198085" x2="807.397250844987" y2="343.37327758985634" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="856.6" y="384.1" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        13
+      </text>
+    
+  <path d="M 814.0848923092537 450.2538401172066 A 318 318 0 0 1 814.0848923092537 549.7461598827934 L 717.2914349309303 534.4155823088508 A 220 220 0 0 0 717.2914349309303 465.5844176911492 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 692.5992264160518 469.495279317155 A 195 195 0 0 1 692.5992264160518 530.504720682845 L 545.4336636673763 507.1959853918506 A 46 46 0 0 0 545.4336636673763 492.8040146081494 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 717.2914349309303 465.5844176911492 A 220 220 0 0 1 717.2914349309303 534.4155823088508 L 692.5992264160518 530.504720682845 A 195 195 0 0 0 692.5992264160518 469.495279317155 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 840.7524775053225 446.03010956112036 A 345 345 0 0 1 840.7524775053225 553.9698904388797 L 814.0848923092537 549.7461598827934 A 318 318 0 0 0 814.0848923092537 450.2538401172066 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="545.4336636673763" y1="492.8040146081494" x2="840.7524775053225" y2="446.03010956112036" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="875.0" y="500.0" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        6
+      </text>
+    
+  <path d="M 814.0848923092537 549.7461598827934 A 318 318 0 0 1 783.340074691901 644.3689789171758 L 696.021435321441 599.8779099427003 A 220 220 0 0 0 717.2914349309303 534.4155823088508 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 692.5992264160518 530.504720682845 A 195 195 0 0 1 673.7462722167318 588.5281474492116 L 540.9863001126649 520.8835629880191 A 46 46 0 0 0 545.4336636673763 507.1959853918506 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 717.2914349309303 534.4155823088508 A 220 220 0 0 1 696.021435321441 599.8779099427003 L 673.7462722167318 588.5281474492116 A 195 195 0 0 0 692.5992264160518 530.504720682845 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 840.7524775053225 553.9698904388797 A 345 345 0 0 1 807.397250844987 656.6267224101437 L 783.340074691901 644.3689789171758 A 318 318 0 0 0 814.0848923092537 549.7461598827934 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="545.4336636673763" y1="507.1959853918506" x2="840.7524775053225" y2="553.9698904388797" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="856.6" y="615.9" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        10
+      </text>
+    
+  <path d="M 783.340074691901 644.3689789171758 A 318 318 0 0 1 724.8599564173221 724.8599564173221 L 655.5634918610405 655.5634918610405 A 220 220 0 0 0 696.021435321441 599.8779099427003 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 673.7462722167318 588.5281474492116 A 195 195 0 0 1 637.8858223313767 637.8858223313767 L 532.5269119345812 532.5269119345812 A 46 46 0 0 0 540.9863001126649 520.8835629880191 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 696.021435321441 599.8779099427003 A 220 220 0 0 1 655.5634918610405 655.5634918610405 L 637.8858223313767 637.8858223313767 A 195 195 0 0 0 673.7462722167318 588.5281474492116 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 807.397250844987 656.6267224101437 A 345 345 0 0 1 743.9518395093589 743.9518395093589 L 724.8599564173221 724.8599564173221 A 318 318 0 0 0 783.340074691901 644.3689789171758 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="540.9863001126649" y1="520.8835629880191" x2="807.397250844987" y2="656.6267224101437" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="803.4" y="720.4" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        15
+      </text>
+    
+  <path d="M 724.8599564173221 724.8599564173221 A 318 318 0 0 1 644.3689789171759 783.340074691901 L 599.8779099427003 696.0214353214409 A 220 220 0 0 0 655.5634918610405 655.5634918610405 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 637.8858223313767 637.8858223313767 A 195 195 0 0 1 588.5281474492117 673.7462722167318 L 520.8835629880192 540.9863001126649 A 46 46 0 0 0 532.5269119345812 532.5269119345812 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 655.5634918610405 655.5634918610405 A 220 220 0 0 1 599.8779099427003 696.0214353214409 L 588.5281474492117 673.7462722167318 A 195 195 0 0 0 637.8858223313767 637.8858223313767 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 743.9518395093589 743.9518395093589 A 345 345 0 0 1 656.6267224101437 807.397250844987 L 644.3689789171759 783.340074691901 A 318 318 0 0 0 724.8599564173221 724.8599564173221 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="532.5269119345812" y1="532.5269119345812" x2="743.9518395093589" y2="743.9518395093589" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="720.4" y="803.4" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        2
+      </text>
+    
+  <path d="M 644.3689789171759 783.340074691901 A 318 318 0 0 1 549.7461598827934 814.0848923092537 L 534.4155823088508 717.2914349309303 A 220 220 0 0 0 599.8779099427003 696.0214353214409 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 588.5281474492117 673.7462722167318 A 195 195 0 0 1 530.504720682845 692.5992264160518 L 507.1959853918506 545.4336636673763 A 46 46 0 0 0 520.8835629880192 540.9863001126649 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 599.8779099427003 696.0214353214409 A 220 220 0 0 1 534.4155823088508 717.2914349309303 L 530.504720682845 692.5992264160518 A 195 195 0 0 0 588.5281474492117 673.7462722167318 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 656.6267224101437 807.397250844987 A 345 345 0 0 1 553.9698904388797 840.7524775053225 L 549.7461598827934 814.0848923092537 A 318 318 0 0 0 644.3689789171759 783.340074691901 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="520.8835629880192" y1="540.9863001126649" x2="656.6267224101437" y2="807.397250844987" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="615.9" y="856.6" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        17
+      </text>
+    
+  <path d="M 549.7461598827934 814.0848923092537 A 318 318 0 0 1 450.25384011720655 814.0848923092537 L 465.58441769114916 717.2914349309303 A 220 220 0 0 0 534.4155823088508 717.2914349309303 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 530.504720682845 692.5992264160518 A 195 195 0 0 1 469.49527931715494 692.5992264160518 L 492.8040146081494 545.4336636673763 A 46 46 0 0 0 507.1959853918506 545.4336636673763 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 534.4155823088508 717.2914349309303 A 220 220 0 0 1 465.58441769114916 717.2914349309303 L 469.49527931715494 692.5992264160518 A 195 195 0 0 0 530.504720682845 692.5992264160518 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 553.9698904388797 840.7524775053225 A 345 345 0 0 1 446.0301095611203 840.7524775053225 L 450.25384011720655 814.0848923092537 A 318 318 0 0 0 549.7461598827934 814.0848923092537 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="507.1959853918506" y1="545.4336636673763" x2="553.9698904388797" y2="840.7524775053225" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="500.0" y="875.0" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        3
+      </text>
+    
+  <path d="M 450.25384011720655 814.0848923092537 A 318 318 0 0 1 355.63102108282413 783.340074691901 L 400.1220900572997 696.021435321441 A 220 220 0 0 0 465.58441769114916 717.2914349309303 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 469.49527931715494 692.5992264160518 A 195 195 0 0 1 411.4718525507884 673.7462722167318 L 479.11643701198085 540.9863001126649 A 46 46 0 0 0 492.8040146081494 545.4336636673763 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 465.58441769114916 717.2914349309303 A 220 220 0 0 1 400.1220900572997 696.021435321441 L 411.4718525507884 673.7462722167318 A 195 195 0 0 0 469.49527931715494 692.5992264160518 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 446.0301095611203 840.7524775053225 A 345 345 0 0 1 343.37327758985634 807.397250844987 L 355.63102108282413 783.340074691901 A 318 318 0 0 0 450.25384011720655 814.0848923092537 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="492.8040146081494" y1="545.4336636673763" x2="446.0301095611203" y2="840.7524775053225" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="384.1" y="856.6" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        19
+      </text>
+    
+  <path d="M 355.63102108282413 783.340074691901 A 318 318 0 0 1 275.1400435826779 724.8599564173221 L 344.43650813895954 655.5634918610405 A 220 220 0 0 0 400.1220900572997 696.021435321441 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 411.4718525507884 673.7462722167318 A 195 195 0 0 1 362.11417766862326 637.8858223313767 L 467.47308806541884 532.5269119345812 A 46 46 0 0 0 479.11643701198085 540.9863001126649 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 400.1220900572997 696.021435321441 A 220 220 0 0 1 344.43650813895954 655.5634918610405 L 362.11417766862326 637.8858223313767 A 195 195 0 0 0 411.4718525507884 673.7462722167318 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 343.37327758985634 807.397250844987 A 345 345 0 0 1 256.0481604906411 743.9518395093589 L 275.1400435826779 724.8599564173221 A 318 318 0 0 0 355.63102108282413 783.340074691901 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="479.11643701198085" y1="540.9863001126649" x2="343.37327758985634" y2="807.397250844987" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="279.6" y="803.4" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        7
+      </text>
+    
+  <path d="M 275.1400435826779 724.8599564173221 A 318 318 0 0 1 216.65992530809905 644.3689789171759 L 303.9785646785591 599.8779099427003 A 220 220 0 0 0 344.43650813895954 655.5634918610405 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 362.11417766862326 637.8858223313767 A 195 195 0 0 1 326.2537277832683 588.5281474492117 L 459.01369988733506 520.8835629880192 A 46 46 0 0 0 467.47308806541884 532.5269119345812 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 344.43650813895954 655.5634918610405 A 220 220 0 0 1 303.9785646785591 599.8779099427003 L 326.2537277832683 588.5281474492117 A 195 195 0 0 0 362.11417766862326 637.8858223313767 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 256.0481604906411 743.9518395093589 A 345 345 0 0 1 192.6027491550131 656.6267224101437 L 216.65992530809905 644.3689789171759 A 318 318 0 0 0 275.1400435826779 724.8599564173221 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="467.47308806541884" y1="532.5269119345812" x2="256.0481604906411" y2="743.9518395093589" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="196.6" y="720.4" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        16
+      </text>
+    
+  <path d="M 216.65992530809905 644.3689789171759 A 318 318 0 0 1 185.9151076907462 549.7461598827934 L 282.7085650690697 534.4155823088508 A 220 220 0 0 0 303.9785646785591 599.8779099427003 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 326.2537277832683 588.5281474492117 A 195 195 0 0 1 307.4007735839482 530.504720682845 L 454.5663363326237 507.1959853918506 A 46 46 0 0 0 459.01369988733506 520.8835629880192 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 303.9785646785591 599.8779099427003 A 220 220 0 0 1 282.7085650690697 534.4155823088508 L 307.4007735839482 530.504720682845 A 195 195 0 0 0 326.2537277832683 588.5281474492117 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 192.6027491550131 656.6267224101437 A 345 345 0 0 1 159.24752249467753 553.9698904388797 L 185.9151076907462 549.7461598827934 A 318 318 0 0 0 216.65992530809905 644.3689789171759 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="459.01369988733506" y1="520.8835629880192" x2="192.6027491550131" y2="656.6267224101437" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="143.4" y="615.9" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        8
+      </text>
+    
+  <path d="M 185.9151076907462 549.7461598827934 A 318 318 0 0 1 185.9151076907462 450.2538401172066 L 282.70856506906966 465.58441769114927 A 220 220 0 0 0 282.7085650690697 534.4155823088508 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 307.4007735839482 530.504720682845 A 195 195 0 0 1 307.40077358394814 469.495279317155 L 454.5663363326237 492.8040146081494 A 46 46 0 0 0 454.5663363326237 507.1959853918506 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 282.7085650690697 534.4155823088508 A 220 220 0 0 1 282.70856506906966 465.58441769114927 L 307.40077358394814 469.495279317155 A 195 195 0 0 0 307.4007735839482 530.504720682845 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 159.24752249467753 553.9698904388797 A 345 345 0 0 1 159.24752249467747 446.0301095611204 L 185.9151076907462 450.2538401172066 A 318 318 0 0 0 185.9151076907462 549.7461598827934 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="454.5663363326237" y1="507.1959853918506" x2="159.24752249467753" y2="553.9698904388797" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="125.0" y="500.0" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        11
+      </text>
+    
+  <path d="M 185.9151076907462 450.2538401172066 A 318 318 0 0 1 216.65992530809893 355.6310210828243 L 303.978564678559 400.12209005729983 A 220 220 0 0 0 282.70856506906966 465.58441769114927 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 307.40077358394814 469.495279317155 A 195 195 0 0 1 326.25372778326823 411.47185255078847 L 459.01369988733506 479.11643701198085 A 46 46 0 0 0 454.5663363326237 492.8040146081494 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 282.70856506906966 465.58441769114927 A 220 220 0 0 1 303.978564678559 400.12209005729983 L 326.25372778326823 411.47185255078847 A 195 195 0 0 0 307.40077358394814 469.495279317155 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 159.24752249467747 446.0301095611204 A 345 345 0 0 1 192.602749155013 343.37327758985657 L 216.65992530809893 355.6310210828243 A 318 318 0 0 0 185.9151076907462 450.2538401172066 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="454.5663363326237" y1="492.8040146081494" x2="159.24752249467747" y2="446.0301095611204" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="143.4" y="384.1" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        14
+      </text>
+    
+  <path d="M 216.65992530809893 355.6310210828243 A 318 318 0 0 1 275.14004358267783 275.1400435826779 L 344.43650813895954 344.43650813895954 A 220 220 0 0 0 303.978564678559 400.12209005729983 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 326.25372778326823 411.47185255078847 A 195 195 0 0 1 362.1141776686232 362.11417766862326 L 467.4730880654188 467.47308806541884 A 46 46 0 0 0 459.01369988733506 479.11643701198085 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 303.978564678559 400.12209005729983 A 220 220 0 0 1 344.43650813895954 344.43650813895954 L 362.1141776686232 362.11417766862326 A 195 195 0 0 0 326.25372778326823 411.47185255078847 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 192.602749155013 343.37327758985657 A 345 345 0 0 1 256.04816049064107 256.0481604906411 L 275.14004358267783 275.1400435826779 A 318 318 0 0 0 216.65992530809893 355.6310210828243 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="459.01369988733506" y1="479.11643701198085" x2="192.602749155013" y2="343.37327758985657" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="196.6" y="279.6" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        9
+      </text>
+    
+  <path d="M 275.14004358267783 275.1400435826779 A 318 318 0 0 1 355.6310210828241 216.65992530809905 L 400.12209005729966 303.9785646785591 A 220 220 0 0 0 344.43650813895954 344.43650813895954 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 362.1141776686232 362.11417766862326 A 195 195 0 0 1 411.47185255078836 326.2537277832683 L 479.11643701198085 459.01369988733506 A 46 46 0 0 0 467.4730880654188 467.47308806541884 Z" fill="rgba(14, 58, 47, 0.04)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 344.43650813895954 344.43650813895954 A 220 220 0 0 1 400.12209005729966 303.9785646785591 L 411.47185255078836 326.2537277832683 A 195 195 0 0 0 362.1141776686232 362.11417766862326 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 256.04816049064107 256.0481604906411 A 345 345 0 0 1 343.37327758985634 192.6027491550131 L 355.6310210828241 216.65992530809905 A 318 318 0 0 0 275.14004358267783 275.1400435826779 Z" fill="rgba(14, 58, 47, 0.22)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="467.4730880654188" y1="467.47308806541884" x2="256.04816049064107" y2="256.0481604906411" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="279.6" y="196.6" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        12
+      </text>
+    
+  <path d="M 355.6310210828241 216.65992530809905 A 318 318 0 0 1 450.25384011720655 185.9151076907462 L 465.58441769114916 282.7085650690697 A 220 220 0 0 0 400.12209005729966 303.9785646785591 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 411.47185255078836 326.2537277832683 A 195 195 0 0 1 469.49527931715494 307.4007735839482 L 492.8040146081494 454.5663363326237 A 46 46 0 0 0 479.11643701198085 459.01369988733506 Z" fill="rgba(167, 180, 122, 0.07)" stroke="#0e3a2f" stroke-opacity="0.1" stroke-width="0.8" />
+  <path d="M 400.12209005729966 303.9785646785591 A 220 220 0 0 1 465.58441769114916 282.7085650690697 L 469.49527931715494 307.4007735839482 A 195 195 0 0 0 411.47185255078836 326.2537277832683 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <path d="M 343.37327758985634 192.6027491550131 A 345 345 0 0 1 446.0301095611203 159.24752249467753 L 450.25384011720655 185.9151076907462 A 318 318 0 0 0 355.6310210828241 216.65992530809905 Z" fill="rgba(167, 180, 122, 0.3)" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1" />
+  <line x1="479.11643701198085" y1="459.01369988733506" x2="343.37327758985634" y2="192.6027491550131" stroke="#0e3a2f" stroke-opacity="0.18" stroke-width="1.1" />
+  
+      <text x="384.1" y="143.4" fill="#0e3a2f" fill-opacity="0.4" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle" dominant-baseline="central">
+        5
+      </text>
+    
+  <circle cx="500" cy="500" r="46" fill="rgba(167, 180, 122, 0.32)" stroke="#0e3a2f" stroke-opacity="0.22" stroke-width="1.5" />
+  <circle cx="500" cy="500" r="22" fill="rgba(14, 58, 47, 0.45)" stroke="#a7b47a" stroke-width="2" />
+  <circle cx="500" cy="500" r="7" fill="#a7b47a" fill-opacity="0.85" />
+  
+    <circle cx="500" cy="500" r="28" fill="none" stroke="#a7b47a" stroke-opacity="0.38" stroke-width="1.2" stroke-dasharray="3 3" />
+    <circle cx="500" cy="500" r="58" fill="none" stroke="#a7b47a" stroke-opacity="0.2" stroke-width="1" />
+  
+  
+    <g transform="translate(500, 500) rotate(-38)">
+      <!-- Shadow of dart -->
+      <g opacity="0.14" transform="translate(10, 14)">
+        <polygon points="0,0 32,-4 135,-5 160,-4 205,-36 280,-38 245,0 280,38 205,36 160,4 135,5 32,4" fill="#082d25" filter="url(#dartBlur)" />
+      </g>
+
+      <!-- Dart Tip (embedded into bullseye) -->
+      <polygon points="0,0 28,-2 28,2" fill="#334155" stroke="#162b31" stroke-width="0.6" />
+
+      <!-- Barrel (textured / grip) -->
+      <path d="M 28,-5.5 L 34,-6.2 L 118,-6.2 L 124,-5 L 124,5 L 118,6.2 L 34,6.2 L 28,5.5 Z" fill="url(#barrelGrad)" stroke="#0e3a2f" stroke-width="0.9" />
+      <!-- Barrel grip rings -->
+      <line x1="42" y1="-6" x2="42" y2="6" stroke="#a7b47a" stroke-width="1.3" stroke-opacity="0.85" />
+      <line x1="54" y1="-6.2" x2="54" y2="6.2" stroke="#a7b47a" stroke-width="1.3" stroke-opacity="0.85" />
+      <line x1="66" y1="-6.2" x2="66" y2="6.2" stroke="#a7b47a" stroke-width="1.3" stroke-opacity="0.85" />
+      <line x1="78" y1="-6.2" x2="78" y2="6.2" stroke="#a7b47a" stroke-width="1.3" stroke-opacity="0.85" />
+      <line x1="90" y1="-6.2" x2="90" y2="6.2" stroke="#a7b47a" stroke-width="1.3" stroke-opacity="0.85" />
+      <line x1="102" y1="-6.2" x2="102" y2="6.2" stroke="#a7b47a" stroke-width="1.3" stroke-opacity="0.85" />
+      <line x1="114" y1="-6" x2="114" y2="6" stroke="#a7b47a" stroke-width="1.3" stroke-opacity="0.85" />
+
+      <!-- Shaft -->
+      <path d="M 124,-3.2 L 188,-2.6 L 188,2.6 L 124,3.2 Z" fill="url(#shaftGrad)" stroke="#5e6d45" stroke-width="0.7" />
+
+      <!-- Flight connector / collar -->
+      <rect x="188" y="-4.2" width="10" height="8.4" rx="2" fill="#0e3a2f" />
+
+      <!-- Top and Bottom Flight Fins (Sayap Dart) -->
+      <!-- Top Fin -->
+      <path d="M 196,-2 L 248,-38 C 260,-40 278,-36 272,-25 L 244,-2 Z" fill="url(#flightGradTop)" stroke="#0e3a2f" stroke-width="1.2" stroke-opacity="0.8" />
+      <path d="M 208,-10 L 264,-34" stroke="#e8eedc" stroke-width="1.4" stroke-opacity="0.75" />
+      <path d="M 224,-6 L 254,-20" stroke="#a7b47a" stroke-width="1" stroke-opacity="0.6" />
+
+      <!-- Bottom Fin -->
+      <path d="M 196,2 L 248,38 C 260,40 278,36 272,25 L 244,2 Z" fill="url(#flightGradBottom)" stroke="#0e3a2f" stroke-width="1.2" stroke-opacity="0.8" />
+      <path d="M 208,10 L 264,34" stroke="#e8eedc" stroke-width="1.4" stroke-opacity="0.75" />
+      <path d="M 224,6 L 254,20" stroke="#a7b47a" stroke-width="1" stroke-opacity="0.6" />
+
+      <!-- Central Fin Rib -->
+      <line x1="194" y1="0" x2="270" y2="0" stroke="#0e3a2f" stroke-width="2.6" stroke-linecap="round" />
+      <circle cx="270" cy="0" r="1.8" fill="#a7b47a" />
+    </g>
+  
+</svg>
