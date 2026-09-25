@@ -137,3 +137,97 @@ if (toggleDetailBtn && detailWrapper) {
     });
   }
 }
+
+// Enabler Service Detail Section Toggle (Expand / Collapse)
+const toggleEnablerBtn = document.getElementById("toggle-enabler-detail-btn");
+const collapseEnablerBottomBtn = document.getElementById("collapse-enabler-bottom-btn");
+const enablerWrapper = document.getElementById("enabler-detail-wrapper");
+const heroEnablerBtn = document.querySelector(".detail-hero a[href='#enabler']");
+
+if (toggleEnablerBtn && enablerWrapper) {
+  const expandEnabler = (targetSelectorOrEl = null, scroll = true) => {
+    enablerWrapper.removeAttribute("hidden");
+    toggleEnablerBtn.setAttribute("aria-expanded", "true");
+    const textSpan = toggleEnablerBtn.querySelector(".btn-text");
+    const iconSpan = toggleEnablerBtn.querySelector(".btn-icon");
+    if (textSpan) textSpan.textContent = "Sembunyikan Detail Informasi";
+    if (iconSpan) iconSpan.textContent = "↑";
+
+    if (scroll) {
+      setTimeout(() => {
+        let target = null;
+        if (typeof targetSelectorOrEl === "string") {
+          target = document.querySelector(targetSelectorOrEl);
+        } else if (targetSelectorOrEl instanceof HTMLElement) {
+          target = targetSelectorOrEl;
+        } else {
+          target = document.getElementById("enabler");
+        }
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 70);
+    }
+  };
+
+  const collapseEnabler = (scroll = true) => {
+    enablerWrapper.setAttribute("hidden", "");
+    toggleEnablerBtn.setAttribute("aria-expanded", "false");
+    const textSpan = toggleEnablerBtn.querySelector(".btn-text");
+    const iconSpan = toggleEnablerBtn.querySelector(".btn-icon");
+    if (textSpan) textSpan.textContent = "Lihat Detail Informasi Semua Pilar";
+    if (iconSpan) iconSpan.textContent = "↓";
+
+    if (scroll) {
+      const toggleAction = document.querySelector(".enabler-intro .detail-toggle-action");
+      if (toggleAction) {
+        toggleAction.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    }
+  };
+
+  toggleEnablerBtn.addEventListener("click", () => {
+    const isExpanded = toggleEnablerBtn.getAttribute("aria-expanded") === "true";
+    if (isExpanded) {
+      collapseEnabler(false);
+    } else {
+      expandEnabler(null, true);
+    }
+  });
+
+  if (collapseEnablerBottomBtn) {
+    collapseEnablerBottomBtn.addEventListener("click", () => {
+      collapseEnabler(true);
+    });
+  }
+
+  if (heroEnablerBtn) {
+    heroEnablerBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      expandEnabler(null, true);
+    });
+  }
+
+  // Intercept pillar chips and overview list items to expand detail section first if hidden
+  const anchorLinks = document.querySelectorAll(
+    ".enabler-pillars-bar a[href^='#'], .enabler-overview-card a[href^='#']"
+  );
+  anchorLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      const href = link.getAttribute("href");
+      if (href && href.startsWith("#")) {
+        e.preventDefault();
+        expandEnabler(href, true);
+      }
+    });
+  });
+
+  // Handle direct hash navigation on initial load (e.g. #marketing, #digital, #operational, #enabler)
+  if (window.location.hash) {
+    const hashTarget = document.querySelector(window.location.hash);
+    if (hashTarget && enablerWrapper.contains(hashTarget)) {
+      expandEnabler(hashTarget, true);
+    }
+  }
+}
+

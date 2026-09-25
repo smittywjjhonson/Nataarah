@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css?v=20260925-8" />
-    <link rel="stylesheet" href="css/service-pages.css?v=20260925-8" />
-    <script src="js/main.js?v=20260925-8" defer></script>
+    <link rel="stylesheet" href="css/style.css?v=20260925-13" />
+    <link rel="stylesheet" href="css/service-pages.css?v=20260925-13" />
+    <script src="js/main.js?v=20260925-13" defer></script>
   </head>
   <body class="service-page">
     <a class="skip-link" href="#main">Lewati ke konten</a>
@@ -95,39 +95,162 @@
           <p>Setiap layanan dipilih sesuai kebutuhan dan prioritas klinik. INSIDER tidak hanya menjembatani, namun juga mengkolaborasikan tim internal dengan jejaring partner tepercaya untuk memberi arahan dan dukungan implementasi yang relevan.</p>
         </div>
 
-        <!-- 3-Pillar Enabler Navigator -->
-        <nav class="enabler-pillars-bar" aria-label="Navigasi pilar enabler service">
-          <a href="#marketing" class="pillar-chip">
-            <div class="pillar-chip-icon" aria-hidden="true"><img src="assets/icons/marketing-brand.svg" alt="" width="26" height="26" /></div>
-            <div class="pillar-chip-content">
-              <span class="pillar-chip-num">Pilar 01</span>
-              <strong>Marketing & Brand</strong>
-              <small>Akuisisi & Reputasi Pasien</small>
+        <!-- List Layanan Enabler (Visual Icons + Text Name, Bright Background) -->
+        <div class="enabler-overview-card" id="katalog-enabler">
+          <div class="enabler-overview-header">
+            <span class="overview-tag"><span aria-hidden="true">✦</span> Katalog Layanan Enabler</span>
+            <h3>Daftar Layanan Pendukung <em>Pertumbuhan Klinik</em></h3>
+          </div>
+
+          <div class="overview-pillars-grid">
+            <!-- Pilar 01 Group -->
+            <div class="overview-pillar-group">
+              <a href="#marketing" class="overview-pillar-badge">
+                <div class="pillar-badge-icon" aria-hidden="true">
+                  <img src="assets/icons/marketing-brand.svg" alt="" width="18" height="18" />
+                </div>
+                <div class="pillar-badge-text">
+                  <span class="pillar-badge-num">Pilar 01</span>
+                  <strong class="pillar-badge-name">Marketing & Brand</strong>
+                </div>
+                <span class="pillar-badge-arrow" aria-hidden="true">↓</span>
+              </a>
+              <div class="overview-items-list">
+                <a href="#marketing" class="overview-item">
+                  <div class="overview-item-icon"><img src="assets/icons/svc-strategy.svg" alt="" width="20" height="20" /></div>
+                  <span class="overview-item-name">Marketing Strategy</span>
+                </a>
+                <a href="#marketing" class="overview-item">
+                  <div class="overview-item-icon"><img src="assets/icons/svc-social.svg" alt="" width="20" height="20" /></div>
+                  <span class="overview-item-name">Social Media Management</span>
+                </a>
+                <a href="#marketing" class="overview-item">
+                  <div class="overview-item-icon"><img src="assets/icons/svc-ads.svg" alt="" width="20" height="20" /></div>
+                  <span class="overview-item-name">Digital Advertising</span>
+                </a>
+                <a href="#marketing" class="overview-item">
+                  <div class="overview-item-icon"><img src="assets/icons/svc-web.svg" alt="" width="20" height="20" /></div>
+                  <span class="overview-item-name">Website & Landing Page</span>
+                </a>
+                <a href="#marketing" class="overview-item">
+                  <div class="overview-item-icon"><img src="assets/icons/svc-brand.svg" alt="" width="20" height="20" /></div>
+                  <span class="overview-item-name">Branding & Communication Material</span>
+                </a>
+              </div>
             </div>
-            <span class="pillar-chip-arrow" aria-hidden="true">↓</span>
-          </a>
-          <a href="#digital" class="pillar-chip">
-            <div class="pillar-chip-icon" aria-hidden="true"><img src="assets/icons/digital-system.svg" alt="" width="26" height="26" /></div>
-            <div class="pillar-chip-content">
-              <span class="pillar-chip-num">Pilar 02</span>
-              <strong>Digital & System</strong>
-              <small>Sistem Data & Integration</small>
+
+            <!-- Pilar 02 Group -->
+            <div class="overview-pillar-group">
+              <a href="#digital" class="overview-pillar-badge">
+                <div class="pillar-badge-icon" aria-hidden="true">
+                  <img src="assets/icons/digital-system.svg" alt="" width="18" height="18" />
+                </div>
+                <div class="pillar-badge-text">
+                  <span class="pillar-badge-num">Pilar 02</span>
+                  <strong class="pillar-badge-name">Digital & System</strong>
+                </div>
+                <span class="pillar-badge-arrow" aria-hidden="true">↓</span>
+              </a>
+              <div class="overview-items-list">
+                <a href="#digital" class="overview-item">
+                  <div class="overview-item-icon"><img src="assets/icons/svc-crm.svg" alt="" width="20" height="20" /></div>
+                  <span class="overview-item-name">Patient Journey Mapping</span>
+                </a>
+                <a href="#digital" class="overview-item">
+                  <div class="overview-item-icon"><img src="assets/icons/svc-reporting.svg" alt="" width="20" height="20" /></div>
+                  <span class="overview-item-name">Reporting System Design</span>
+                </a>
+                <a href="#digital" class="overview-item">
+                  <div class="overview-item-icon"><img src="assets/icons/svc-integration.svg" alt="" width="20" height="20" /></div>
+                  <span class="overview-item-name">System Integration Advisory</span>
+                </a>
+                <a href="#digital" class="overview-item">
+                  <div class="overview-item-icon"><img src="assets/icons/svc-dataviz.svg" alt="" width="20" height="20" /></div>
+                  <span class="overview-item-name">Data Visualization & Insight</span>
+                </a>
+              </div>
             </div>
-            <span class="pillar-chip-arrow" aria-hidden="true">↓</span>
-          </a>
-          <a href="#operational" class="pillar-chip">
-            <div class="pillar-chip-icon" aria-hidden="true"><img src="assets/icons/team-operational.svg" alt="" width="26" height="26" /></div>
-            <div class="pillar-chip-content">
-              <span class="pillar-chip-num">Pilar 03</span>
-              <strong>Team & Operational</strong>
-              <small>SOP & Pelatihan Tim</small>
+
+            <!-- Pilar 03 Group -->
+            <div class="overview-pillar-group">
+              <a href="#operational" class="overview-pillar-badge">
+                <div class="pillar-badge-icon" aria-hidden="true">
+                  <img src="assets/icons/team-operational.svg" alt="" width="18" height="18" />
+                </div>
+                <div class="pillar-badge-text">
+                  <span class="pillar-badge-num">Pilar 03</span>
+                  <strong class="pillar-badge-name">Team & Operational</strong>
+                </div>
+                <span class="pillar-badge-arrow" aria-hidden="true">↓</span>
+              </a>
+              <div class="overview-items-list">
+                <a href="#operational" class="overview-item">
+                  <div class="overview-item-icon"><img src="assets/icons/svc-sop.svg" alt="" width="20" height="20" /></div>
+                  <span class="overview-item-name">SOP Development</span>
+                </a>
+                <a href="#operational" class="overview-item">
+                  <div class="overview-item-icon"><img src="assets/icons/svc-training.svg" alt="" width="20" height="20" /></div>
+                  <span class="overview-item-name">Service Excellence Training</span>
+                </a>
+                <a href="#operational" class="overview-item">
+                  <div class="overview-item-icon"><img src="assets/icons/svc-operational.svg" alt="" width="20" height="20" /></div>
+                  <span class="overview-item-name">Operational Workflow Improvement</span>
+                </a>
+                <div class="overview-item-with-children">
+                  <a href="#operational" class="overview-item parent-service-item">
+                    <div class="overview-item-icon"><img src="assets/icons/svc-advisory.svg" alt="" width="20" height="20" /></div>
+                    <span class="overview-item-name">Coach & Advisory from Experts</span>
+                  </a>
+                  <div class="overview-children-tree" aria-label="Spesialisasi Coach & Advisory">
+                    <a href="#operational" class="overview-child-pill">
+                      <span class="child-pill-icon" aria-hidden="true">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                      </span>
+                      <span class="child-pill-name">Financial</span>
+                    </a>
+                    <a href="#operational" class="overview-child-pill">
+                      <span class="child-pill-icon" aria-hidden="true">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                      </span>
+                      <span class="child-pill-name">Tax</span>
+                    </a>
+                    <a href="#operational" class="overview-child-pill">
+                      <span class="child-pill-icon" aria-hidden="true">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+                      </span>
+                      <span class="child-pill-name">HR</span>
+                    </a>
+                    <a href="#operational" class="overview-child-pill">
+                      <span class="child-pill-icon" aria-hidden="true">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/><circle cx="5" cy="12" r="1.5"/></svg>
+                      </span>
+                      <span class="child-pill-name">And others</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <span class="pillar-chip-arrow" aria-hidden="true">↓</span>
-          </a>
-        </nav>
+          </div>
+        </div>
+
+        <!-- Toggle Button Action Bar -->
+        <div class="detail-toggle-action visual-minimal-action" style="margin-top: 32px;">
+          <button 
+            type="button" 
+            class="detail-expand-btn" 
+            id="toggle-enabler-detail-btn"
+            aria-expanded="false" 
+            aria-controls="enabler-detail-wrapper"
+          >
+            <span class="btn-text">Lihat Detail Informasi Semua Pilar</span>
+            <span class="btn-icon" aria-hidden="true">↓</span>
+          </button>
+        </div>
       </section>
 
-      <section class="section-wrap" id="enabler" aria-label="Kategori Enabler Service">
+      <!-- Detailed Pillars Section (Default Hidden) -->
+      <div class="enabler-detail-wrapper" id="enabler-detail-wrapper" hidden>
+        <section class="section-wrap" id="enabler" aria-label="Kategori Enabler Service">
         <!-- Category 01 -->
         <article class="enabler-category" id="marketing">
           <header class="category-head">
@@ -430,7 +553,16 @@
         </article>
       </section>
       <aside class="enabler-principle section-wrap"><span aria-hidden="true">✳</span><p>Setiap dukungan disesuaikan dengan konteks klinik dan dijalankan secara kolaboratif dengan arah strategis yang jelas, partner yang sesuai, dan fokus pada hasil.</p></aside>
-      
+        
+        <div class="detail-collapse-bottom section-wrap">
+          <button type="button" class="detail-collapse-btn" id="collapse-enabler-bottom-btn">
+            <span>Sembunyikan Detail Informasi</span>
+            <span aria-hidden="true">↑</span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="detail-bottom section-wrap" aria-label="Navigasi layanan"><p>Mencari pendampingan strategis menyeluruh?</p><a href="core-service.html">Lihat Core Service <span aria-hidden="true">↗</span></a></nav>
     </main>
     <footer class="site-footer"><a class="footer-brand" href="index.html"><img src="assets/images/insider-primary-logo.png" alt="INSIDER Healthcare Growth Partner" /></a><p>The journey from insight to sustainable growth.</p><a href="index.html" class="back-top">Kembali ke beranda ↗</a><small>© <span id="year"></span> INSIDER.</small></footer>
   </body>
