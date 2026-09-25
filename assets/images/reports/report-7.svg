@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#260d1d"/>
+      <stop offset="50%" stop-color="#421733"/>
+      <stop offset="100%" stop-color="#5e2349"/>
+    </linearGradient>
+    <linearGradient id="accent-grad-7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <pattern id="grid-7" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" fill="url(#bg-7)"/>
+  <rect width="800" height="520" fill="url(#grid-7)"/>
+
+  <!-- Decorative Orbs -->
+  <circle cx="700" cy="90" r="180" fill="#f472b6" opacity="0.08" filter="blur(40px)"/>
+  <circle cx="120" cy="460" r="140" fill="#421733" opacity="0.15" filter="blur(50px)"/>
+
+  <!-- Top Badge Bar -->
+  <g transform="translate(48, 44)">
+    <rect width="180" height="30" rx="15" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <circle cx="16" cy="15" r="4" fill="#f472b6"/>
+    <text x="28" y="19" font-family="'Manrope', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#e2e8f0" letter-spacing="1">INSIDER REPORT #07</text>
+  </g>
+
+  <!-- Top Right Format Tag -->
+  <g transform="translate(630, 44)">
+    <rect width="122" height="30" rx="15" fill="rgba(255,255,255,0.08)" stroke="#f472b6" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="61" y="19" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#f472b6">EXECUTIVE BRIEF</text>
+  </g>
+
+  <!-- Visual Center Chart / Data Illustration -->
+  <g transform="translate(48, 100)">
+    <!-- Decorative Card Frame -->
+    <rect width="704" height="260" rx="18" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+    
+    <!-- Mini UI Topbar -->
+    <line x1="24" y1="46" x2="680" y2="46" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <circle cx="36" cy="24" r="4.5" fill="#f87171" opacity="0.7"/>
+    <circle cx="52" cy="24" r="4.5" fill="#fbbf24" opacity="0.7"/>
+    <circle cx="68" cy="24" r="4.5" fill="#34d399" opacity="0.7"/>
+    <text x="96" y="28" font-family="'Inter', sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">insight.insiderhealthcare.id / report-7.svg</text>
+
+    <!-- Chart / Visual Graphics according to type -->
+    <g transform="translate(30, 70)">
+      <!-- Left side: Key Stat Card -->
+      <rect width="210" height="145" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <text x="20" y="36" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.6)" letter-spacing="0.5">METRIK UTAMA</text>
+      <text x="20" y="85" font-family="'Manrope', sans-serif" font-size="38" font-weight="800" fill="#f472b6">89+</text>
+      <text x="20" y="112" font-family="'Inter', sans-serif" font-size="11" fill="rgba(255,255,255,0.75)">
+        <tspan x="20" dy="0">Net Promoter Score (NPS)</tspan>
+        <tspan x="20" dy="16"> Pasien</tspan>
+      </text>
+
+      <!-- Right side: Graphical Visualization -->
+      <g transform="translate(240, 10)">
+        <!-- Grid horizontal lines -->
+        <line x1="0" y1="20" x2="390" y2="20" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4 4"/>
+        <line x1="0" y1="60" x2="390" y2="60" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4 4"/>
+        <line x1="0" y1="100" x2="390" y2="100" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4 4"/>
+
+        <!-- Sample Dynamic Bar/Chart Paths based on ID -->
+        <path d="M 20 95 Q 80 70, 130 50 T 230 40 T 320 18 T 380 8" fill="none" stroke="#f472b6" stroke-width="3" stroke-linecap="round"/>
+        <path d="M 20 95 Q 80 70, 130 50 T 230 40 T 320 18 T 380 8 L 380 120 L 20 120 Z" fill="url(#accent-grad-7)" opacity="0.12"/>
+        
+        <!-- Data Points on curve -->
+        <circle cx="20" cy="95" r="4.5" fill="#fff" stroke="#f472b6" stroke-width="2"/>
+        <circle cx="130" cy="50" r="4.5" fill="#fff" stroke="#f472b6" stroke-width="2"/>
+        <circle cx="230" cy="40" r="4.5" fill="#fff" stroke="#f472b6" stroke-width="2"/>
+        <circle cx="380" cy="8" r="6" fill="#f472b6" stroke="#fff" stroke-width="2"/>
+
+        <!-- Pill Badge on high point -->
+        <rect x="290" y="-8" width="85" height="20" rx="10" fill="#f472b6"/>
+        <text x="332" y="6" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#0e3a2f">PEAK INDEX</text>
+
+        <!-- Bar comparisons below -->
+        <rect x="30" y="125" width="22" height="12" rx="3" fill="rgba(255,255,255,0.2)"/>
+        <rect x="90" y="120" width="22" height="17" rx="3" fill="rgba(255,255,255,0.3)"/>
+        <rect x="150" y="110" width="22" height="27" rx="3" fill="rgba(255,255,255,0.4)"/>
+        <rect x="210" y="105" width="22" height="32" rx="3" fill="rgba(255,255,255,0.5)"/>
+        <rect x="270" y="95" width="22" height="42" rx="3" fill="#f472b6" opacity="0.8"/>
+        <rect x="330" y="80" width="22" height="57" rx="3" fill="#f472b6"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Title Block -->
+  <g transform="translate(48, 400)">
+    <text x="0" y="14" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#f472b6" letter-spacing="1.5">PEOPLE & HOSPITALITY</text>
+    <text x="0" y="44" font-family="'Manrope', -apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="800" fill="#ffffff" letter-spacing="-0.5">Standarisasi SOP Front-Office</text>
+    <text x="0" y="68" font-family="'Inter', sans-serif" font-size="13" fill="rgba(255,255,255,0.7)">Pelayanan Prima, De-eskalasi Komplain, & NPS Pasien</text>
+    
+    <g transform="translate(620, 24)">
+      <circle cx="20" cy="20" r="20" fill="rgba(255,255,255,0.1)"/>
+      <path d="M 15 25 L 25 15 M 18 15 L 25 15 L 25 22" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

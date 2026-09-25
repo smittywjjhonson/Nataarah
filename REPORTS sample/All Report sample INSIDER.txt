@@ -1,0 +1,115 @@
+Pasien Insight Report
+Data yang dibutuhkan : 
+✓ Nama atau ID Pasien
+✓ Tanggal Kunjungan
+✓ Jenis Layanan yang Diambil
+✓ Dokter yang Melayani
+✓ Nilai Transaksi
+
+Manfaat report : 
+Patient Insight Report
+
+Ubah data pasien menjadi insight yang membantu Anda mengambil keputusan bisnis dengan lebih percaya diri.
+Temukan siapa pasien terbaik Anda, layanan yang paling potensial, peluang pertumbuhan yang tersembunyi, serta area yang perlu segera diperbaiki — semuanya dirangkum dalam satu laporan yang mudah dipahami dan dapat langsung ditindaklanjuti.
+Karena pertumbuhan yang berkelanjutan dimulai dari pemahaman yang lebih baik terhadap klinik Anda sendiri.
+
+-------------------
+Competitor Analysis report
+Data yang dibutuhkan : 
+Lokasi klinik (kota/kecamatan)
+Layanan Utama
+Layanan saat ini
+Layanan unggulan
+Target Pasien
+Area Persaingan
+
+Manfaat report : 
+Competitor Analysis Report
+Pahami posisi klinik Anda di tengah persaingan dan temukan peluang pertumbuhan yang belum dimanfaatkan.
+Kami menganalisis kompetitor di sekitar Anda, membandingkan layanan, strategi pemasaran, positioning, dan kekuatan mereka di pasar. Hasilnya adalah insight yang membantu Anda mengambil keputusan bisnis dengan lebih percaya diri, lebih terarah, dan berbasis fakta — bukan sekadar asumsi.
+
+Yang Anda dapatkan:
+Analisis kompetitor utama
+Perbandingan layanan dan positioning
+Insight peluang pasar
+Area diferensiasi yang potensial
+Rekomendasi pertumbuhan yang dapat ditindaklanjuti
+
+Karena memahami kompetitor bukan tentang meniru mereka, tetapi menemukan ruang untuk tumbuh dengan cara yang berbeda.
+
+---------------------
+Market Opportunity & SWOT report
+Data minimum yang dibutuhkan : 
+Informasi Klinik
+Data Pasien (6–12 bulan terakhir)
+Data Pendapatan (Opsional namun sangat direkomendasikan)
+Informasi Kompetitor
+Informasi Bisnis & Target Klinik
+
+Manfaat report : 
+Market Opportunity & SWOT Report membantu Anda menjawab pertanyaan sederhana namun penting:
+"Di mana peluang terbesar klinik saya, apa yang membuat saya unggul, dan langkah apa yang paling masuk akal untuk mendorong pertumbuhan berikutnya?"
+Karena pertumbuhan yang berkelanjutan tidak dimulai dari menambah aktivitas, tetapi dari memahami peluang yang paling tepat untuk dikejar. Sejalan dengan pendekatan INSIDER yang berfokus pada insight, strategy, dan sustainable growth.
+
+---------------------
+Patient Journey Map Report
+Data minimum yang dibutuhkan :
+Data Pasien
+Data Kunjungan
+Data Layanan
+Alur Pelayanan
+
+Manfaat report : 
+Lihat apa yang sebenarnya terjadi setelah pasien datang ke klinik Anda.
+Ketahui bagaimana pasien pertama kali datang, layanan yang mereka gunakan, kapan mereka kembali, dan di titik mana mereka berhenti berkunjung. Temukan kebocoran, peluang, dan potensi pertumbuhan yang selama ini tersembunyi di balik data klinik Anda.
+Dari data kunjungan menjadi insight yang membantu Anda mengambil keputusan dengan lebih percaya diri.
+
+-----------------------
+Growth Blueprint & Roadmap report
+Data minimum yang dibutuhkan : 
+Informasi Dasar Klinik
+Data Pasien
+Data Operasional
+Data Marketing & Branding
+Data Keuangan (Opsional)
+Informasi Kompetitor (Opsional)
+
+Manfaat report : 
+Dari Insight Menjadi Arah yang Jelas
+Growth Blueprint & Roadmap membantu Anda memahami peluang terbesar, menentukan prioritas yang tepat, dan menyusun langkah pertumbuhan yang realistis untuk 12 bulan ke depan.
+Bukan sekadar laporan. Bukan sekadar ide.
+Sebuah rencana pertumbuhan yang dirancang berdasarkan kondisi nyata klinik Anda, agar setiap keputusan yang diambil lebih terarah, terukur, dan berdampak.
+
+-----------------------
+Clinic Intellegent Report
+Data minimum yang dibutuhkan :
+profil dan segmentasi pasien
+pola kunjungan dan perilaku pasien
+kontribusi pendapatan dan potensi pertumbuhan
+peluang peningkatan efisiensi operasional
+aktivitas pemasaran
+
+Manfaat report : 
+Clinic Intelligence Report membantu Anda menjawab:
+
+✓ Siapa sebenarnya pasien terbaik kami?
+✓ Apa peluang pertumbuhan terbesar kami?
+✓ Apa yang sedang berjalan baik?
+✓ Apa yang perlu diperbaiki?
+✓ Ke mana arah pertumbuhan klinik sebaiknya difokuskan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

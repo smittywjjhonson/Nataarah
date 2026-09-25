@@ -31,6 +31,10 @@ img { max-width: 100%; display: block; }
 .site-nav { display: flex; align-items: center; gap: 34px; }
 .site-nav a { color: var(--slate); font-size: .86rem; font-weight: 600; text-decoration: none; transition: color .2s ease; }
 .site-nav a:hover, .site-nav a:focus-visible { color: var(--green); }
+.site-nav a.nav-active,
+.site-nav a[aria-current="page"] { color: var(--green); font-weight: 700; position: relative; }
+.site-nav a.nav-active:not(.nav-cta)::after,
+.site-nav a[aria-current="page"]:not(.nav-cta)::after { content: ""; position: absolute; bottom: -6px; left: 0; right: 0; height: 2.5px; background: var(--green); border-radius: 999px; }
 .site-nav .nav-cta { display: inline-flex; align-items: center; gap: 12px; padding: 11px 17px; border-radius: 999px; background: var(--green); color: var(--white); }
 .nav-cta span { color: var(--sage); font-size: 1rem; }
 .nav-dropdown { position: relative; display: flex; align-items: center; }
