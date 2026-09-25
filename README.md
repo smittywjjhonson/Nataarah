@@ -1,4 +1,4 @@
-﻿# INSIDER landing page
+# INSIDER landing page
 
 Landing page statis untuk INSIDER — Healthcare Growth Partner. Dibuat dengan HTML, CSS, dan JavaScript tanpa framework.
 
@@ -6,16 +6,20 @@ Landing page statis untuk INSIDER — Healthcare Growth Partner. Dibuat dengan H
 
 Buka `index.html` di browser, atau gunakan server lokal pilihanmu selama pengembangan.
 
+## Halaman layanan
+
+- `core-service.html` — detail empat tahap Core Service, dari Business Discovery hingga Growth Partnership
+- `enabler-service.html` — detail layanan Marketing & Brand, Digital & System, serta Team & Operational
+
 ## Struktur
 
-- `index.html` — struktur dan konten halaman
-- `css/style.css` — identitas visual dan tata letak responsif
-- `js/main.js` — navigasi mobile dan tahun footer
+- `index.html` — halaman utama
+- `css/style.css` — identitas visual dan tata letak responsif halaman utama
+- `css/service-pages.css` — gaya untuk halaman detail layanan
+- `js/main.js` — dropdown layanan, navigasi mobile, dan tahun footer
 - `assets/images/insider-primary-logo.png` — logo utama INSIDER
 - `assets/icons/favicon.svg` — ikon tab browser
 
-## Arah konten
+Growth Partnership disusun sebagai proyek dengan ruang lingkup dan timeline yang disepakati bersama. Pembayaran dapat dijadwalkan per bulan mengikuti timeline proyek.
 
-INSIDER mendampingi klinik mengubah data menjadi insight, keputusan, dan pertumbuhan. Growth Partnership disusun sebagai proyek dengan ruang lingkup, timeline, dan jadwal pembayaran yang disepakati bersama.
-
-Detail email dan kontak lain ditambahkan setelah tersedia. Dokumen internal dan master aset merek disimpan terpisah dari file landing page.
+Email dan kontak lain akan ditambahkan setelah tersedia. Dokumen internal dan master aset merek disimpan terpisah dari file landing page.
