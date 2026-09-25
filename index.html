@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/style.css?v=20260925-3" />
+    <script src="js/main.js?v=20260925-3" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Lewati ke konten</a>
@@ -68,11 +68,74 @@
         <div class="belief-inner section-wrap">
           <div class="belief-copy"><p class="eyebrow eyebrow-light">Cara pandang INSIDER</p><h2 id="belief-title">Pemilik klinik paling memahami <em>kliniknya.</em></h2><p>Pengalaman pemilik dan tim bertemu dengan analisis, struktur berpikir, serta perspektif dari luar operasional harian. Dari kolaborasi itu, strategi tumbuh dibangun bersama—sesuai keadaan klinik.</p><a class="light-link" href="#cara-kerja">Kenali pendekatan kami <span aria-hidden="true">↗</span></a></div>
           <div class="collab-visual" aria-label="Kolaborasi antara pemilik klinik dan INSIDER" role="img">
-            <div class="collab-line"></div>
-            <div class="collab-node clinic-node"><span class="node-icon" aria-hidden="true">✚</span><small>PEMILIK KLINIK</small><b>Pengalaman<br/>dan konteks</b><span class="node-items">Pasien · Tim · Pasar</span></div>
-            <div class="collab-center"><span>+</span><small>CO-CREATION</small></div>
-            <div class="collab-node insider-node"><span class="node-icon" aria-hidden="true">↗</span><small>INSIDER</small><b>Analisis<br/>dan perspektif</b><span class="node-items">Data · Struktur · Insight</span></div>
-            <div class="collab-result"><span aria-hidden="true">✳</span> Strategi yang relevan dan realistis</div>
+            <!-- Pilot & Co-Pilot Illustration Banner -->
+            <div class="collab-illustration-banner">
+              <img src="assets/images/pilot-copilot-insider.jpg" alt="Dokter sebagai Pilot dan INSIDER sebagai Co-Pilot dalam navigasi klinik" />
+              <div class="illustration-badges">
+                <span class="role-badge pilot"><span class="badge-icon" aria-hidden="true">✈</span> Dokter · Pilot</span>
+                <span class="role-badge copilot"><span class="badge-icon" aria-hidden="true">🧭</span> INSIDER · Co-Pilot</span>
+              </div>
+            </div>
+
+            <div class="collab-deck">
+              <div class="collab-track" aria-hidden="true"></div>
+
+              <!-- Left Node: Pemilik Klinik -->
+              <article class="collab-card clinic-card">
+                <div class="collab-card-header">
+                  <div class="collab-badge-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 4v16m-8-8h16"/>
+                      <circle cx="12" cy="12" r="9" stroke-width="1.4" stroke-dasharray="2 3"/>
+                    </svg>
+                  </div>
+                  <span class="collab-role-tag">Pemilik Klinik</span>
+                </div>
+                <h3 class="collab-card-title">Pengalaman<br/>dan konteks</h3>
+                <div class="collab-tags">
+                  <span class="collab-pill">Pasien</span>
+                  <span class="collab-pill">Tim</span>
+                  <span class="collab-pill">Pasar</span>
+                </div>
+              </article>
+
+              <!-- Center Hub: Co-Creation -->
+              <div class="collab-hub-wrap">
+                <div class="collab-hub">
+                  <span class="collab-hub-plus" aria-hidden="true">+</span>
+                  <span class="collab-hub-label">CO-CREATION</span>
+                </div>
+              </div>
+
+              <!-- Right Node: INSIDER -->
+              <article class="collab-card insider-card">
+                <div class="collab-card-header">
+                  <div class="collab-badge-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M7 17L17 7m0 0H8m9 0v9"/>
+                      <path d="M3 21h18" stroke-width="1.4" stroke-opacity="0.5"/>
+                    </svg>
+                  </div>
+                  <span class="collab-role-tag">INSIDER</span>
+                </div>
+                <h3 class="collab-card-title">Analisis<br/>dan perspektif</h3>
+                <div class="collab-tags">
+                  <span class="collab-pill">Data</span>
+                  <span class="collab-pill">Struktur</span>
+                  <span class="collab-pill">Insight</span>
+                </div>
+              </article>
+            </div>
+
+            <!-- Downward Flow Stem -->
+            <div class="collab-flow-stem" aria-hidden="true"></div>
+
+            <!-- Outcome Banner -->
+            <div class="collab-outcome">
+              <span class="collab-outcome-sparkle" aria-hidden="true">✳</span>
+              <span class="collab-outcome-text">Strategi yang relevan dan realistis</span>
+              <span class="collab-outcome-badge">Hasil Bersama</span>
+            </div>
           </div>
         </div>
       </section>
@@ -100,21 +163,34 @@
       <section class="services-section section-pad" id="layanan" aria-labelledby="services-title">
         <div class="section-wrap">
           <div class="section-heading services-heading"><div><p class="eyebrow">Layanan INSIDER</p><h2 id="services-title">Dukungan yang mengikuti <em>kebutuhan klinik.</em></h2></div><p class="section-lead">Growth Partnership adalah proyek dengan ruang lingkup dan timeline yang disepakati bersama. Pembayaran dapat dijadwalkan per bulan mengikuti timeline proyek.</p></div>
-          <div class="service-main"><div class="service-main-icon" aria-hidden="true"><img src="assets/icons/core-service.svg" alt="" /></div><div class="service-main-copy"><p class="process-label">LAYANAN UTAMA</p><h3>Growth Partnership</h3><p>Pendampingan berbasis kolaborasi untuk membantu klinik menyusun dan menjalankan prioritas pertumbuhan yang relevan.</p></div><div class="project-note"><span class="note-check" aria-hidden="true">✓</span><p><b>Berbasis proyek</b><br/>Ruang lingkup, timeline, dan jadwal pembayaran dibahas bersama.</p></div></div>
+          <div class="service-main"><div class="service-main-icon" aria-hidden="true"><img src="assets/icons/core-service.svg" alt="" /></div><div class="service-main-copy"><p class="process-label">LAYANAN UTAMA</p><h3>Growth Partnership</h3><p>Pendampingan berbasis kolaborasi untuk membantu klinik menyusun dan menjalankan prioritas pertumbuhan yang relevan.</p><a class="service-detail-link" href="core-service.html">Pelajari detail Core Service <span aria-hidden="true">↗</span></a></div><div class="project-note"><span class="note-check" aria-hidden="true">✓</span><p><b>Berbasis proyek</b><br/>Ruang lingkup, timeline, dan jadwal pembayaran dibahas bersama.</p></div></div>
           <p class="enabler-label">Layanan pendukung, sesuai kebutuhan</p>
           <div class="enabler-grid">
             <article class="enabler-card"><span class="enabler-index">01 / BRAND & PASAR</span><span class="enabler-icon" aria-hidden="true"><img src="assets/icons/marketing-brand.svg" alt="" /></span><h3>Marketing & Brand</h3><p>Membantu klinik menjangkau pasien yang tepat dan membangun komunikasi yang konsisten.</p><ul><li>Strategi marketing</li><li>Konten dan media sosial</li><li>Website dan materi brand</li></ul></article>
             <article class="enabler-card"><span class="enabler-index">02 / DATA & SISTEM</span><span class="enabler-icon" aria-hidden="true"><img src="assets/icons/digital-system.svg" alt="" /></span><h3>Digital & System</h3><p>Membantu klinik memanfaatkan data dan teknologi untuk mendukung keputusan serta operasional.</p><ul><li>CRM dan patient journey</li><li>Dashboard dan laporan</li><li>Integrasi sistem</li></ul></article>
             <article class="enabler-card"><span class="enabler-index">03 / TIM & OPERASIONAL</span><span class="enabler-icon" aria-hidden="true"><img src="assets/icons/team-operational.svg" alt="" /></span><h3>Team & Operations</h3><p>Mendukung tim dan proses kerja agar klinik lebih siap menjalankan rencana pertumbuhannya.</p><ul><li>Pengembangan SOP</li><li>Pelatihan tim</li><li>Perbaikan proses kerja</li></ul></article>
           </div>
-          <p class="flex-note"><span aria-hidden="true">✳</span> Dukungan tambahan dipilih berdasarkan konteks dan prioritas masing-masing klinik.</p>
+          <p class="flex-note"><span aria-hidden="true">✳</span> Dukungan tambahan dipilih berdasarkan konteks dan prioritas masing-masing klinik. <a class="service-detail-link" style="display:inline-flex;margin-left:8px;margin-top:0;" href="enabler-service.html">Pelajari detail Enabler Service <span aria-hidden="true">↗</span></a></p>
         </div>
       </section>
 
       <section class="closing-section section-wrap" id="kontak" aria-labelledby="closing-title">
-        <div class="closing-mark" aria-hidden="true">✳</div>
-        <div><p class="eyebrow eyebrow-light">INSIDER · Healthcare Growth Partner</p><h2 id="closing-title">Potensi pertumbuhan klinik sudah ada. Mari temukan <em>arahnya bersama.</em></h2><p>Kami mulai dengan memahami klinik Anda—lalu menyusun langkah yang paling relevan untuk dijalankan.</p></div>
-        <a class="closing-link" href="#cara-kerja">Lihat cara kerja <span aria-hidden="true">↗</span></a>
+        <div class="closing-copy-block">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-mark"></span> INSIDER · Healthcare Growth Partner</p>
+          <h2 id="closing-title">Potensi pertumbuhan klinik sudah ada. Mari temukan <em>arahnya bersama.</em></h2>
+          <p>Kami mulai dengan memahami klinik Anda—lalu menyusun langkah yang paling relevan untuk dijalankan.</p>
+          <div class="closing-actions">
+            <a class="closing-link" href="#cara-kerja">Lihat cara kerja <span aria-hidden="true">↗</span></a>
+            <span class="closing-pill-note"><span class="note-star" aria-hidden="true">✳</span> Langkah relevan & terukur</span>
+          </div>
+        </div>
+
+        <div class="closing-visual-frame" aria-label="Diskusi roadmap pertumbuhan klinik bersama advisor INSIDER" role="img">
+          <img src="assets/images/insider-closing-banner.jpg" alt="Pemilik klinik dan advisor INSIDER meninjau roadmap pertumbuhan" />
+          <div class="closing-img-overlay">
+            <span class="closing-img-badge"><span aria-hidden="true">✳</span> Clinic Growth Roadmap</span>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="site-footer">

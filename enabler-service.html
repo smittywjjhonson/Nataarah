@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/service-pages.css" />
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/style.css?v=20260925-6" />
+    <link rel="stylesheet" href="css/service-pages.css?v=20260925-6" />
+    <script src="js/main.js?v=20260925-6" defer></script>
   </head>
   <body class="service-page">
     <a class="skip-link" href="#main">Lewati ke konten</a>
@@ -39,40 +39,331 @@
         </div>
       </section>
       <section class="enabler-intro section-wrap">
-        <div><p class="eyebrow">Dukungan yang fleksibel</p><h2>Memperkuat fondasi klinik untuk tumbuh.</h2></div>
-        <p>Setiap layanan dipilih sesuai kebutuhan dan prioritas klinik. INSIDER menggabungkan tim internal dengan jejaring partner tepercaya untuk memberi arahan dan dukungan implementasi yang relevan.</p>
+        <div class="enabler-intro-head">
+          <div><p class="eyebrow">Dukungan yang fleksibel</p><h2>Memperkuat fondasi klinik untuk tumbuh.</h2></div>
+          <p>Setiap layanan dipilih sesuai kebutuhan dan prioritas klinik. INSIDER menggabungkan tim internal dengan jejaring partner tepercaya untuk memberi arahan dan dukungan implementasi yang relevan.</p>
+        </div>
+
+        <!-- 3-Pillar Enabler Navigator -->
+        <nav class="enabler-pillars-bar" aria-label="Navigasi pilar enabler service">
+          <a href="#marketing" class="pillar-chip">
+            <div class="pillar-chip-icon" aria-hidden="true"><img src="assets/icons/marketing-brand.svg" alt="" width="26" height="26" /></div>
+            <div class="pillar-chip-content">
+              <span class="pillar-chip-num">Pilar 01</span>
+              <strong>Marketing & Brand</strong>
+              <small>Akuisisi & Reputasi Pasien</small>
+            </div>
+            <span class="pillar-chip-arrow" aria-hidden="true">↓</span>
+          </a>
+          <a href="#digital" class="pillar-chip">
+            <div class="pillar-chip-icon" aria-hidden="true"><img src="assets/icons/digital-system.svg" alt="" width="26" height="26" /></div>
+            <div class="pillar-chip-content">
+              <span class="pillar-chip-num">Pilar 02</span>
+              <strong>Digital & System</strong>
+              <small>Sistem Data & Integration</small>
+            </div>
+            <span class="pillar-chip-arrow" aria-hidden="true">↓</span>
+          </a>
+          <a href="#operational" class="pillar-chip">
+            <div class="pillar-chip-icon" aria-hidden="true"><img src="assets/icons/team-operational.svg" alt="" width="26" height="26" /></div>
+            <div class="pillar-chip-content">
+              <span class="pillar-chip-num">Pilar 03</span>
+              <strong>Team & Operational</strong>
+              <small>Standarisasi SOP & Pelatihan Tim</small>
+            </div>
+            <span class="pillar-chip-arrow" aria-hidden="true">↓</span>
+          </a>
+        </nav>
       </section>
 
       <section class="section-wrap" id="enabler" aria-label="Kategori Enabler Service">
-        <article class="enabler-category">
-          <header class="category-head"><span class="category-number">01</span><div><p class="process-label">MARKETING & BRAND ENABLEMENT</p><h2>Marketing & Brand</h2><p>Membantu klinik lebih dikenal, lebih dipercaya, dan menjangkau lebih banyak pasien yang tepat.</p></div></header>
+        <!-- Category 01 -->
+        <article class="enabler-category" id="marketing">
+          <header class="category-head">
+            <div class="category-meta">
+              <span class="category-number">01</span>
+              <div class="category-icon-box" aria-hidden="true">
+                <img src="assets/icons/marketing-brand.svg" alt="" width="30" height="30" />
+              </div>
+            </div>
+            <div class="category-info">
+              <span class="category-tag">ENABLEMENT PILAR 01</span>
+              <h2>Marketing & Brand</h2>
+              <p>Membantu klinik lebih dikenal, lebih dipercaya, dan menjangkau lebih banyak pasien yang tepat secara konsisten.</p>
+            </div>
+          </header>
+
           <div class="enable-services">
-            <article class="enable-card"><h3>Marketing Strategy</h3><ul><li>Marketing assessment</li><li>Channel review</li><li>Strategic recommendation</li></ul><p class="resource-label">Fokus: arah dan rekomendasi marketing klinik.</p></article>
-            <article class="enable-card"><h3>Social Media Management</h3><ul><li>Content planning</li><li>Content production</li><li>Monthly reporting</li></ul><p class="resource-label">Fokus: pengelolaan dan evaluasi media sosial.</p></article>
-            <article class="enable-card"><h3>Digital Advertising</h3><ul><li>Campaign setup</li><li>Audience targeting</li><li>Performance monitoring</li></ul><p class="resource-label">Fokus: kampanye iklan digital dan kinerjanya.</p></article>
-            <article class="enable-card"><h3>Website & Landing Page</h3><ul><li>Website development</li><li>Landing page development</li><li>Deployment support</li></ul><p class="resource-label">Fokus: kanal digital untuk informasi dan akuisisi pasien.</p></article>
-            <article class="enable-card"><h3>Branding & Communication Material</h3><ul><li>Brand assessment</li><li>Company profile</li><li>Presentation deck</li></ul><p class="resource-label">Fokus: identitas dan materi komunikasi klinik.</p></article>
+            <article class="enable-card">
+              <div class="enable-card-top">
+                <div class="enable-card-icon" aria-hidden="true"><img src="assets/icons/svc-strategy.svg" alt="" width="22" height="22" /></div>
+                <h3>Marketing Strategy</h3>
+              </div>
+              <ul class="enable-points">
+                <li><span class="point-dot" aria-hidden="true">✓</span> Marketing assessment</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Channel review</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Strategic recommendation</li>
+              </ul>
+              <p class="resource-label"><b>Fokus:</b> arah dan rekomendasi marketing klinik.</p>
+            </article>
+
+            <article class="enable-card">
+              <div class="enable-card-top">
+                <div class="enable-card-icon" aria-hidden="true"><img src="assets/icons/svc-social.svg" alt="" width="22" height="22" /></div>
+                <h3>Social Media Management</h3>
+              </div>
+              <ul class="enable-points">
+                <li><span class="point-dot" aria-hidden="true">✓</span> Content planning</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Content production</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Monthly reporting</li>
+              </ul>
+              <p class="resource-label"><b>Fokus:</b> pengelolaan dan evaluasi media sosial.</p>
+            </article>
+
+            <article class="enable-card">
+              <div class="enable-card-top">
+                <div class="enable-card-icon" aria-hidden="true"><img src="assets/icons/svc-ads.svg" alt="" width="22" height="22" /></div>
+                <h3>Digital Advertising</h3>
+              </div>
+              <ul class="enable-points">
+                <li><span class="point-dot" aria-hidden="true">✓</span> Campaign setup</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Audience targeting</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Performance monitoring</li>
+              </ul>
+              <p class="resource-label"><b>Fokus:</b> kampanye iklan digital dan kinerjanya.</p>
+            </article>
+
+            <article class="enable-card">
+              <div class="enable-card-top">
+                <div class="enable-card-icon" aria-hidden="true"><img src="assets/icons/svc-web.svg" alt="" width="22" height="22" /></div>
+                <h3>Website & Landing Page</h3>
+              </div>
+              <ul class="enable-points">
+                <li><span class="point-dot" aria-hidden="true">✓</span> Website development</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Landing page development</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Deployment support</li>
+              </ul>
+              <p class="resource-label"><b>Fokus:</b> kanal digital untuk informasi dan akuisisi pasien.</p>
+            </article>
+
+            <article class="enable-card">
+              <div class="enable-card-top">
+                <div class="enable-card-icon" aria-hidden="true"><img src="assets/icons/svc-brand.svg" alt="" width="22" height="22" /></div>
+                <h3>Branding & Communication Material</h3>
+              </div>
+              <ul class="enable-points">
+                <li><span class="point-dot" aria-hidden="true">✓</span> Brand assessment</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Company profile</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Presentation deck</li>
+              </ul>
+              <p class="resource-label"><b>Fokus:</b> identitas dan materi komunikasi klinik.</p>
+            </article>
+          </div>
+
+          <!-- Feature Showcase Marketing -->
+          <div class="enable-feature-showcase">
+            <div class="showcase-content">
+              <span class="showcase-tag"><span aria-hidden="true">✦</span> Pertumbuhan Pasien</span>
+              <h3>Ekosistem Pemasaran & Kehadiran Digital Terpadu</h3>
+              <p>Dari strategi merek, pengelolaan kanal sosial, iklan digital performa tinggi, hingga website & landing page konversi tinggi untuk membangun reputasi klinik terdepan.</p>
+              <ul class="showcase-highlights">
+                <li><span class="showcase-check" aria-hidden="true">✓</span> Penataan Identitas & Pesan Utama Klinik yang Kredibel</li>
+                <li><span class="showcase-check" aria-hidden="true">✓</span> Kampanye Pemasaran Tertarget Sesuai Karakter Pasien</li>
+                <li><span class="showcase-check" aria-hidden="true">✓</span> Kanal Digital Terintegrasi untuk Akuisisi Pasien Baru</li>
+              </ul>
+            </div>
+            <div class="showcase-visual">
+              <img src="assets/images/insider-clinic-growth-hero.png" alt="Konsultasi Pemasaran dan Brand Klinik INSIDER" loading="lazy" />
+            </div>
           </div>
         </article>
 
-        <article class="enabler-category">
-          <header class="category-head"><span class="category-number">02</span><div><p class="process-label">DIGITAL & SYSTEM ENABLEMENT</p><h2>Digital & System</h2><p>Membantu klinik memanfaatkan teknologi untuk mendukung pertumbuhan dan efisiensi operasional.</p></div></header>
+        <!-- Category 02 -->
+        <article class="enabler-category" id="digital">
+          <header class="category-head">
+            <div class="category-meta">
+              <span class="category-number">02</span>
+              <div class="category-icon-box" aria-hidden="true">
+                <img src="assets/icons/digital-system.svg" alt="" width="30" height="30" />
+              </div>
+            </div>
+            <div class="category-info">
+              <span class="category-tag">ENABLEMENT PILAR 02</span>
+              <h2>Digital & System</h2>
+              <p>Membantu klinik memanfaatkan teknologi untuk mendukung pertumbuhan dan efisiensi operasional.</p>
+            </div>
+          </header>
+
           <div class="enable-services">
-            <article class="enable-card"><h3>CRM & Patient Journey Mapping</h3><ul><li>Journey mapping</li><li>Touchpoint analysis</li><li>Improvement recommendation</li></ul><p class="resource-label">Fokus: perjalanan pasien dan titik peningkatannya.</p></article>
-            <article class="enable-card"><h3>Dashboard Management</h3><ul><li>KPI framework</li><li>Dashboard planning</li><li>Dashboard review</li></ul><p class="resource-label">Fokus: indikator dan pemantauan kinerja klinik.</p></article>
-            <article class="enable-card"><h3>Reporting System Design</h3><ul><li>Reporting framework</li><li>Weekly report</li><li>Monthly report</li></ul><p class="resource-label">Fokus: format pelaporan yang mendukung keputusan.</p></article>
-            <article class="enable-card"><h3>System Integration & Implementation Advisory</h3><ul><li>Requirement mapping</li><li>Vendor coordination</li><li>Implementation support</li></ul><p class="resource-label">Fokus: pemetaan kebutuhan dan pendampingan implementasi.</p></article>
-            <article class="enable-card"><h3>Data Visualization & Business Insight</h3><ul><li>Data analysis</li><li>Insight dashboard</li><li>Business recommendation</li></ul><p class="resource-label">Fokus: menyajikan data sebagai insight bisnis.</p></article>
+            <article class="enable-card">
+              <div class="enable-card-top">
+                <div class="enable-card-icon" aria-hidden="true"><img src="assets/icons/svc-crm.svg" alt="" width="22" height="22" /></div>
+                <h3>CRM & Patient Journey Mapping</h3>
+              </div>
+              <ul class="enable-points">
+                <li><span class="point-dot" aria-hidden="true">✓</span> Journey mapping</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Touchpoint analysis</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Improvement recommendation</li>
+              </ul>
+              <p class="resource-label"><b>Fokus:</b> perjalanan pasien dan titik peningkatannya.</p>
+            </article>
+
+            <article class="enable-card">
+              <div class="enable-card-top">
+                <div class="enable-card-icon" aria-hidden="true"><img src="assets/icons/svc-dashboard.svg" alt="" width="22" height="22" /></div>
+                <h3>Dashboard Management</h3>
+              </div>
+              <ul class="enable-points">
+                <li><span class="point-dot" aria-hidden="true">✓</span> KPI framework</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Dashboard planning</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Dashboard review</li>
+              </ul>
+              <p class="resource-label"><b>Fokus:</b> indikator dan pemantauan kinerja klinik.</p>
+            </article>
+
+            <article class="enable-card">
+              <div class="enable-card-top">
+                <div class="enable-card-icon" aria-hidden="true"><img src="assets/icons/svc-reporting.svg" alt="" width="22" height="22" /></div>
+                <h3>Reporting System Design</h3>
+              </div>
+              <ul class="enable-points">
+                <li><span class="point-dot" aria-hidden="true">✓</span> Reporting framework</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Weekly report</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Monthly report</li>
+              </ul>
+              <p class="resource-label"><b>Fokus:</b> format pelaporan yang mendukung keputusan.</p>
+            </article>
+
+            <article class="enable-card">
+              <div class="enable-card-top">
+                <div class="enable-card-icon" aria-hidden="true"><img src="assets/icons/svc-integration.svg" alt="" width="22" height="22" /></div>
+                <h3>System Integration & Implementation Advisory</h3>
+              </div>
+              <ul class="enable-points">
+                <li><span class="point-dot" aria-hidden="true">✓</span> Requirement mapping</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Vendor coordination</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Implementation support</li>
+              </ul>
+              <p class="resource-label"><b>Fokus:</b> pemetaan kebutuhan dan pendampingan implementasi.</p>
+            </article>
+
+            <article class="enable-card">
+              <div class="enable-card-top">
+                <div class="enable-card-icon" aria-hidden="true"><img src="assets/icons/svc-dataviz.svg" alt="" width="22" height="22" /></div>
+                <h3>Data Visualization & Business Insight</h3>
+              </div>
+              <ul class="enable-points">
+                <li><span class="point-dot" aria-hidden="true">✓</span> Data analysis</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Insight dashboard</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Business recommendation</li>
+              </ul>
+              <p class="resource-label"><b>Fokus:</b> menyajikan data sebagai insight bisnis.</p>
+            </article>
+          </div>
+
+          <!-- Feature Showcase Digital -->
+          <div class="enable-feature-showcase">
+            <div class="showcase-content">
+              <span class="showcase-tag"><span aria-hidden="true">✦</span> Solusi Terintegrasi</span>
+              <h3>Dashboard & Visualisasi Kinerja Klinik Real-time</h3>
+              <p>Kami merancang dan mengintegrasikan sistem pelaporan berkala hingga dashboard eksekutif agar pemilik klinik dapat memantau retensi pasien, performa layanan, dan peluang pertumbuhan secara presisi.</p>
+              <ul class="showcase-highlights">
+                <li><span class="showcase-check" aria-hidden="true">✓</span> Pemantauan KPI & Retensi Pasien Otomatis</li>
+                <li><span class="showcase-check" aria-hidden="true">✓</span> Format Pelaporan Mingguan & Bulanan yang Aplikatif</li>
+                <li><span class="showcase-check" aria-hidden="true">✓</span> Rekomendasi Strategis Berbasis Data Nyata</li>
+              </ul>
+            </div>
+            <div class="showcase-visual">
+              <img src="assets/images/insider-product-dashboard.jpg" alt="Preview Dashboard Kinerja & Sistem Klinik INSIDER" loading="lazy" />
+            </div>
           </div>
         </article>
 
-        <article class="enabler-category">
-          <header class="category-head"><span class="category-number">03</span><div><p class="process-label">TEAM & OPERATIONAL ENABLEMENT</p><h2>Team & Operational</h2><p>Membantu tim dan proses operasional klinik agar lebih terstruktur dan siap menghadapi pertumbuhan.</p></div></header>
+        <!-- Category 03 -->
+        <article class="enabler-category" id="operational">
+          <header class="category-head">
+            <div class="category-meta">
+              <span class="category-number">03</span>
+              <div class="category-icon-box" aria-hidden="true">
+                <img src="assets/icons/team-operational.svg" alt="" width="30" height="30" />
+              </div>
+            </div>
+            <div class="category-info">
+              <span class="category-tag">ENABLEMENT PILAR 03</span>
+              <h2>Team & Operational</h2>
+              <p>Membantu tim dan proses operasional klinik agar lebih terstruktur dan siap menghadapi pertumbuhan.</p>
+            </div>
+          </header>
+
           <div class="enable-services">
-            <article class="enable-card"><h3>SOP Development</h3><ul><li>SOP assessment</li><li>SOP documentation</li><li>Implementation guidance</li></ul><p class="resource-label">Fokus: standar kerja yang dapat diterapkan tim.</p></article>
-            <article class="enable-card"><h3>Process Improvement & Team Training</h3><ul><li>Process review</li><li>Improvement plan</li><li>Team training</li></ul><p class="resource-label">Fokus: perbaikan proses dan pengembangan kemampuan tim.</p></article>
-            <article class="enable-card"><h3>Operational Review & Improvement</h3><ul><li>Operational assessment</li><li>Improvement roadmap</li><li>Monitoring framework</li></ul><p class="resource-label">Fokus: evaluasi dan peningkatan operasional klinik.</p></article>
-            <article class="enable-card"><h3>Coach & Advisory from Experts</h3><ul><li>Financial, tax, HR, and recruitment advisory</li><li>Workshop and facilitation</li><li>Dukungan ahli sesuai kebutuhan</li></ul><p class="resource-label">Fokus: akses ke keahlian spesifik sesuai konteks klinik.</p></article>
+            <article class="enable-card">
+              <div class="enable-card-top">
+                <div class="enable-card-icon" aria-hidden="true"><img src="assets/icons/svc-sop.svg" alt="" width="22" height="22" /></div>
+                <h3>SOP Development</h3>
+              </div>
+              <ul class="enable-points">
+                <li><span class="point-dot" aria-hidden="true">✓</span> SOP assessment</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> SOP documentation</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Implementation guidance</li>
+              </ul>
+              <p class="resource-label"><b>Fokus:</b> standar kerja yang dapat diterapkan tim.</p>
+            </article>
+
+            <article class="enable-card">
+              <div class="enable-card-top">
+                <div class="enable-card-icon" aria-hidden="true"><img src="assets/icons/svc-training.svg" alt="" width="22" height="22" /></div>
+                <h3>Process Improvement & Team Training</h3>
+              </div>
+              <ul class="enable-points">
+                <li><span class="point-dot" aria-hidden="true">✓</span> Process review</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Improvement plan</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Team training</li>
+              </ul>
+              <p class="resource-label"><b>Fokus:</b> perbaikan proses dan pengembangan kemampuan tim.</p>
+            </article>
+
+            <article class="enable-card">
+              <div class="enable-card-top">
+                <div class="enable-card-icon" aria-hidden="true"><img src="assets/icons/svc-operational.svg" alt="" width="22" height="22" /></div>
+                <h3>Operational Review & Improvement</h3>
+              </div>
+              <ul class="enable-points">
+                <li><span class="point-dot" aria-hidden="true">✓</span> Operational assessment</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Improvement roadmap</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Monitoring framework</li>
+              </ul>
+              <p class="resource-label"><b>Fokus:</b> evaluasi dan peningkatan operasional klinik.</p>
+            </article>
+
+            <article class="enable-card">
+              <div class="enable-card-top">
+                <div class="enable-card-icon" aria-hidden="true"><img src="assets/icons/svc-advisory.svg" alt="" width="22" height="22" /></div>
+                <h3>Coach & Advisory from Experts</h3>
+              </div>
+              <ul class="enable-points">
+                <li><span class="point-dot" aria-hidden="true">✓</span> Financial, tax, HR, and recruitment advisory</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Workshop and facilitation</li>
+                <li><span class="point-dot" aria-hidden="true">✓</span> Dukungan ahli sesuai kebutuhan</li>
+              </ul>
+              <p class="resource-label"><b>Fokus:</b> akses ke keahlian spesifik sesuai konteks klinik.</p>
+            </article>
+          </div>
+
+          <!-- Feature Showcase Operational -->
+          <div class="enable-feature-showcase">
+            <div class="showcase-content">
+              <span class="showcase-tag"><span aria-hidden="true">✦</span> Kolaborasi & Pendampingan</span>
+              <h3>Standar Operasional & Kapasitas Tim yang Terukur</h3>
+              <p>Pertumbuhan klinik yang sehat membutuhkan eksekusi tim yang solid. Kami mendampingi penyusunan SOP, perbaikan alur layanan klinik, hingga sesi advisory intensif bersama pakar lintas fungsi.</p>
+              <ul class="showcase-highlights">
+                <li><span class="showcase-check" aria-hidden="true">✓</span> Standard Operating Procedure (SOP) Siap Pakai</li>
+                <li><span class="showcase-check" aria-hidden="true">✓</span> Workshop & Pelatihan Peningkatan Pelayanan Tim</li>
+                <li><span class="showcase-check" aria-hidden="true">✓</span> Akses Langsung ke Expert Finansial, HR, dan Legal</li>
+              </ul>
+            </div>
+            <div class="showcase-visual">
+              <img src="assets/images/insider-closing-banner.jpg" alt="Pendampingan Operasional dan Pelatihan Tim Klinik INSIDER" loading="lazy" />
+            </div>
           </div>
         </article>
       </section>

@@ -9,10 +9,19 @@ if (serviceDropdown && serviceDropdownToggle) {
     serviceDropdownToggle.setAttribute("aria-expanded", "false");
   };
 
-  serviceDropdownToggle.addEventListener("click", () => {
-    const isOpen = serviceDropdownToggle.getAttribute("aria-expanded") === "true";
-    serviceDropdownToggle.setAttribute("aria-expanded", String(!isOpen));
-    serviceDropdown.classList.toggle("is-open", !isOpen);
+  const openServiceDropdown = () => {
+    serviceDropdown.classList.add("is-open");
+    serviceDropdownToggle.setAttribute("aria-expanded", "true");
+  };
+
+  serviceDropdownToggle.addEventListener("click", (event) => {
+    event.stopPropagation();
+    const isOpen = serviceDropdown.classList.contains("is-open");
+    if (isOpen) {
+      closeServiceDropdown();
+    } else {
+      openServiceDropdown();
+    }
   });
 
   serviceDropdown.addEventListener("keydown", (event) => {
@@ -23,30 +32,34 @@ if (serviceDropdown && serviceDropdownToggle) {
   });
 
   document.addEventListener("click", (event) => {
-    if (!serviceDropdown.contains(event.target)) closeServiceDropdown();
+    if (!serviceDropdown.contains(event.target)) {
+      closeServiceDropdown();
+    }
   });
 }
 
 if (menuToggle && siteNav) {
   const closeMenu = () => {
     menuToggle.setAttribute("aria-expanded", "false");
-    menuToggle.querySelector(".menu-toggle-label").textContent = "Menu";
+    const label = menuToggle.querySelector(".menu-toggle-label");
+    if (label) label.textContent = "Menu";
     siteNav.classList.remove("is-open");
   };
 
   menuToggle.addEventListener("click", () => {
     const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
     menuToggle.setAttribute("aria-expanded", String(!isOpen));
-    menuToggle.querySelector(".menu-toggle-label").textContent = isOpen ? "Menu" : "Tutup";
+    const label = menuToggle.querySelector(".menu-toggle-label");
+    if (label) label.textContent = isOpen ? "Menu" : "Tutup";
     siteNav.classList.toggle("is-open", !isOpen);
   });
 
   siteNav.addEventListener("click", (event) => {
-    if (event.target instanceof HTMLAnchorElement) {
-      closeMenu();
-      if (event.target.closest(".dropdown-menu")) {
-        serviceDropdown?.classList.remove("is-open");
-        serviceDropdownToggle?.setAttribute("aria-expanded", "false");
+    const anchor = event.target.closest("a");
+    if (anchor) {
+      const href = anchor.getAttribute("href");
+      if (href && href.startsWith("#")) {
+        closeMenu();
       }
     }
   });
