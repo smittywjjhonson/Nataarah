@@ -1,6 +1,6 @@
-# INSIDER landing page
+# INSIGHT landing page
 
-Landing page statis untuk INSIDER — Healthcare Growth Partner. Dibuat dengan HTML, CSS, dan JavaScript tanpa framework.
+Landing page statis untuk INSIGHT — Healthcare Growth Partner. Dibuat dengan HTML, CSS, dan JavaScript tanpa framework.
 
 ## Menjalankan
 
@@ -17,8 +17,8 @@ Buka `index.html` di browser, atau gunakan server lokal pilihanmu selama pengemb
 - `css/style.css` — identitas visual dan tata letak responsif halaman utama
 - `css/service-pages.css` — gaya untuk halaman detail layanan
 - `js/main.js` — dropdown layanan, navigasi mobile, dan tahun footer
-- `assets/images/insider-primary-logo.png` — logo utama INSIDER
-- `assets/images/insider-clinic-growth-hero.png` — foto latar utama
+- `assets/images/insight-primary-logo.png` — logo utama INSIGHT
+- `assets/images/insight-clinic-growth-hero.png` — foto latar utama
 - `assets/icons/` — favicon dan ikon layanan
 - `assets/icons/favicon.svg` — ikon tab browser
 

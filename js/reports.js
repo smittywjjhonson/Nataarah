@@ -1,5 +1,5 @@
 /**
- * INSIDER Healthcare Growth Partner
+ * INSIGHT Healthcare Growth Partner
  * Reports Showcase Interactivity (Modal Lightbox & Image Preview)
  * Real report samples with permanently watermarked assets
  */
