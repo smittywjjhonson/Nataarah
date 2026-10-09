@@ -53,23 +53,22 @@
 /* Infographic Image Frame */
 .infographic-visual-card {
   margin: 0 0 32px 0;
-  border-radius: 26px;
-  background: radial-gradient(circle at 80% 20%, rgba(167, 180, 122, 0.16) 0%, transparent 60%), linear-gradient(145deg, #144538 0%, #0e3a2f 60%, #0a2f26 100%);
-  border: 1px solid rgba(167, 180, 122, 0.22);
-  box-shadow: 0 16px 40px -10px rgba(14, 58, 47, 0.12), 0 4px 16px rgba(14, 58, 47, 0.04);
-  overflow: hidden;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  overflow: visible;
   position: relative;
 }
 .infographic-img-container {
   position: relative;
   width: 100%;
-  background: #0d382e;
+  background: transparent;
 }
 .infographic-image {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
 }
 .infographic-caption {
   padding: 18px 28px;
@@ -560,17 +559,19 @@
 }
 .pillar-badge-text {
   display: flex;
-  align-items: baseline;
-  gap: 8px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
 }
 .pillar-badge-num {
   font-family: var(--font-display);
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 800;
   color: #c4d7ac;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  line-height: 1.2;
 }
 .pillar-badge-name {
   font-family: var(--font-display);
@@ -578,6 +579,7 @@
   font-weight: 700;
   color: #ffffff;
   letter-spacing: -0.01em;
+  line-height: 1.25;
 }
 .pillar-badge-arrow {
   width: 26px;
@@ -816,14 +818,15 @@
   right: 0;
   height: 4px;
 }
+#business::before,
+#operational::before {
+  background: linear-gradient(90deg, #0e3a2f, #8c9e6d);
+}
 #marketing::before {
   background: linear-gradient(90deg, #8c9e6d, #4a7c6f);
 }
 #digital::before {
   background: linear-gradient(90deg, #4a7c6f, #0e3a2f);
-}
-#operational::before {
-  background: linear-gradient(90deg, #0e3a2f, #8c9e6d);
 }
 .enabler-category:nth-of-type(even) {
   background: #fbfdf9;
