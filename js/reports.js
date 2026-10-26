@@ -1,5 +1,5 @@
 /**
- * INSIGHT Healthcare Growth Partner
+ * NATAARAH — Business · Strategy · Creative
  * Reports Showcase Interactivity (Modal Lightbox & Image Preview)
  * Real report samples with permanently watermarked assets
  */

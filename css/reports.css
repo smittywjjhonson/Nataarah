@@ -1,11 +1,11 @@
 /* ============================================================
-   INSIGHT - Reports Page Stylesheet
+   NATAARAH - Reports Page Stylesheet
    Pure Visual Showcase Gallery (Image-first with Hover Zoom & Overlay Details)
-   Source: REPORTS sample (INSIGHT Healthcare Intelligence)
+   Source: REPORTS sample (NATAARAH Intelligence)
    ============================================================ */
 
 .reports-page {
-  background: #f8faf6;
+  background: #F3EFE6;
 }
 
 /* ------------------------------------------------------------
@@ -31,7 +31,7 @@
   border-radius: 14px;
   padding: 14px 22px;
   margin-bottom: 28px;
-  box-shadow: 0 4px 14px rgba(14, 58, 47, 0.03);
+  box-shadow: 0 4px 14px rgba(18, 59, 50, 0.03);
 }
 
 .notice-icon {
@@ -42,7 +42,7 @@
   width: 38px;
   height: 38px;
   border-radius: 10px;
-  background: rgba(14, 58, 47, 0.08);
+  background: rgba(18, 59, 50, 0.08);
   color: var(--green);
 }
 
@@ -115,9 +115,9 @@
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  background: #082d25;
+  background: #0D302A;
   border: 1px solid #dfe5da;
-  box-shadow: 0 4px 16px rgba(14, 58, 47, 0.045);
+  box-shadow: 0 4px 16px rgba(18, 59, 50, 0.045);
   aspect-ratio: 3 / 2;
   cursor: pointer;
   outline: none;
@@ -131,8 +131,8 @@
 .report-card:focus-within,
 .report-card.is-active {
   transform: translateY(-8px);
-  box-shadow: 0 20px 44px -10px rgba(14, 58, 47, 0.22), 0 6px 18px -4px rgba(14, 58, 47, 0.08);
-  border-color: #a7b47a;
+  box-shadow: 0 20px 44px -10px rgba(18, 59, 50, 0.22), 0 6px 18px -4px rgba(18, 59, 50, 0.08);
+  border-color: #8C9870;
 }
 
 /* Image Inner Wrap */
@@ -172,7 +172,7 @@
   border-radius: 999px;
   background: rgba(8, 45, 37, 0.88);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(167, 180, 122, 0.35);
+  border: 1px solid rgba(140, 152, 112, 0.35);
   color: #e5f0d8;
   font-size: 0.68rem;
   font-weight: 700;
@@ -221,8 +221,8 @@
   padding: 22px 22px 18px;
   background: linear-gradient(
     180deg,
-    rgba(14, 58, 47, 0.15) 0%,
-    rgba(14, 58, 47, 0.60) 40%,
+    rgba(18, 59, 50, 0.15) 0%,
+    rgba(18, 59, 50, 0.60) 40%,
     rgba(10, 46, 37, 0.88) 85%
   );
   backdrop-filter: blur(2px);
@@ -420,7 +420,7 @@
   position: relative;
   margin-block: 16px 24px;
   border: 1px solid #dbe6d1;
-  box-shadow: 0 10px 26px -8px rgba(14, 58, 47, 0.12);
+  box-shadow: 0 10px 26px -8px rgba(18, 59, 50, 0.12);
 }
 .modal-media-wrap a {
   display: block;
@@ -449,7 +449,7 @@
   padding: 6px 14px;
   border-radius: 999px;
   background: rgba(8, 45, 37, 0.88);
-  border: 1px solid rgba(167, 180, 122, 0.35);
+  border: 1px solid rgba(140, 152, 112, 0.35);
   backdrop-filter: blur(8px);
   color: #e5f0d8;
   font-size: 0.74rem;
@@ -544,7 +544,7 @@
   line-height: 1.55;
 }
 .modal-info-card li::before {
-  content: "✓";
+  content: "âœ“";
   position: absolute;
   left: 0;
   top: 1px;
