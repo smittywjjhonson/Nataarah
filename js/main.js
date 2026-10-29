@@ -1,6 +1,7 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector(".site-nav");
 const allNavDropdowns = Array.from(document.querySelectorAll(".nav-dropdown"));
+const uiText = (text) => window.nataarahTranslateText ? window.nataarahTranslateText(text) : text;
 
 if (allNavDropdowns.length > 0) {
   allNavDropdowns.forEach((dropdown) => {
@@ -47,7 +48,7 @@ if (allNavDropdowns.length > 0) {
         if (siteNav && siteNav.classList.contains("is-open") && menuToggle) {
           menuToggle.setAttribute("aria-expanded", "false");
           const label = menuToggle.querySelector(".menu-toggle-label");
-          if (label) label.textContent = "Menu";
+          if (label) label.textContent = uiText("Menu");
           siteNav.classList.remove("is-open");
         }
       });
@@ -69,7 +70,7 @@ if (menuToggle && siteNav) {
   const closeMenu = () => {
     menuToggle.setAttribute("aria-expanded", "false");
     const label = menuToggle.querySelector(".menu-toggle-label");
-    if (label) label.textContent = "Menu";
+    if (label) label.textContent = uiText("Menu");
     siteNav.classList.remove("is-open");
   };
 
@@ -77,7 +78,7 @@ if (menuToggle && siteNav) {
     const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
     menuToggle.setAttribute("aria-expanded", String(!isOpen));
     const label = menuToggle.querySelector(".menu-toggle-label");
-    if (label) label.textContent = isOpen ? "Menu" : "Tutup";
+    if (label) label.textContent = uiText(isOpen ? "Menu" : "Tutup");
     siteNav.classList.toggle("is-open", !isOpen);
   });
 
@@ -117,7 +118,7 @@ if (toggleDetailBtn && detailWrapper) {
     toggleDetailBtn.setAttribute("aria-expanded", "true");
     const textSpan = toggleDetailBtn.querySelector(".btn-text");
     const iconSpan = toggleDetailBtn.querySelector(".btn-icon");
-    if (textSpan) textSpan.textContent = "Sembunyikan Detail Tahapan";
+    if (textSpan) textSpan.textContent = uiText("Sembunyikan Detail Tahapan");
     if (iconSpan) iconSpan.textContent = "↑";
     if (scroll) {
       const target = document.getElementById("tahapan");
@@ -134,7 +135,7 @@ if (toggleDetailBtn && detailWrapper) {
     toggleDetailBtn.setAttribute("aria-expanded", "false");
     const textSpan = toggleDetailBtn.querySelector(".btn-text");
     const iconSpan = toggleDetailBtn.querySelector(".btn-icon");
-    if (textSpan) textSpan.textContent = "Lihat Detail Tahapan Layanan";
+    if (textSpan) textSpan.textContent = uiText("Lihat Detail Tahapan Layanan");
     if (iconSpan) iconSpan.textContent = "↓";
     if (scroll) {
       const toggleAction = document.querySelector(".detail-toggle-action");
@@ -179,7 +180,7 @@ if (toggleEnablerBtn && enablerWrapper) {
     toggleEnablerBtn.setAttribute("aria-expanded", "true");
     const textSpan = toggleEnablerBtn.querySelector(".btn-text");
     const iconSpan = toggleEnablerBtn.querySelector(".btn-icon");
-    if (textSpan) textSpan.textContent = "Sembunyikan Detail Informasi";
+    if (textSpan) textSpan.textContent = uiText("Sembunyikan Detail Informasi");
     if (iconSpan) iconSpan.textContent = "↑";
 
     if (scroll) {
@@ -204,7 +205,7 @@ if (toggleEnablerBtn && enablerWrapper) {
     toggleEnablerBtn.setAttribute("aria-expanded", "false");
     const textSpan = toggleEnablerBtn.querySelector(".btn-text");
     const iconSpan = toggleEnablerBtn.querySelector(".btn-icon");
-    if (textSpan) textSpan.textContent = "Lihat Detail Informasi Semua Pilar";
+    if (textSpan) textSpan.textContent = uiText("Lihat Detail Informasi Semua Pilar");
     if (iconSpan) iconSpan.textContent = "↓";
 
     if (scroll) {
@@ -259,4 +260,3 @@ if (toggleEnablerBtn && enablerWrapper) {
     }
   }
 }
-

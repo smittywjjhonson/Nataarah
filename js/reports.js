@@ -24,14 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // Open Modal function
   const openModal = (card) => {
     if (!modal) return;
+    const translate = (text) => window.nataarahTranslateText ? window.nataarahTranslateText(text) : text;
 
-    const title = card.getAttribute("data-title") || "";
-    const catName = card.getAttribute("data-category-name") || "";
+    const title = translate(card.getAttribute("data-title") || "");
+    const catName = translate(card.getAttribute("data-category-name") || "");
     const date = card.getAttribute("data-date") || "";
     const imgSrc = card.getAttribute("data-img") || "";
-    const statVal = card.getAttribute("data-stat") || "";
-    const statLbl = card.getAttribute("data-stat-label") || "";
-    const summary = card.getAttribute("data-summary") || "";
+    const statVal = translate(card.getAttribute("data-stat") || "");
+    const statLbl = translate(card.getAttribute("data-stat-label") || "");
+    const summary = translate(card.getAttribute("data-summary") || "");
     const dataReqStr = card.getAttribute("data-required") || "";
     const outcomesStr = card.getAttribute("data-outcomes") || "";
 
@@ -56,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
       reqList.forEach((item) => {
         if (item.trim()) {
           const li = document.createElement("li");
-          li.textContent = item.trim();
+          li.textContent = translate(item.trim());
           modalDataRequired.appendChild(li);
         }
       });
@@ -69,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       outList.forEach((item) => {
         if (item.trim()) {
           const li = document.createElement("li");
-          li.textContent = item.trim();
+          li.textContent = translate(item.trim());
           modalOutcomes.appendChild(li);
         }
       });
