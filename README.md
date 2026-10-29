@@ -1,6 +1,6 @@
-# NATAARAH Website
+# NATA ARAH Website
 
-Landing page statis NATAARAH — Business · Strategy · Creative, dibuat dengan HTML, CSS, dan JavaScript tanpa framework.
+Landing page statis NATA ARAH — Business · Strategy · Creative, dibuat dengan HTML, CSS, dan JavaScript tanpa framework.
 
 ## Menjalankan
 
