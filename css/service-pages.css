@@ -40,7 +40,7 @@
   margin: 0 0 14px;
 }
 .infographic-intro h2 em {
-  color: var(--green);
+  color: var(--sage);
   font-style: normal;
 }
 .infographic-intro .section-lead {
@@ -494,7 +494,7 @@
   line-height: 1.25;
 }
 .enabler-overview-header h3 em {
-  color: var(--green);
+  color: var(--sage);
   font-style: normal;
 }
 
