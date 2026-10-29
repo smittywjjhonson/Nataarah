@@ -167,6 +167,7 @@ img { max-width: 100%; display: block; }
   text-decoration: none;
   transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
 }
+.dropdown-home { grid-template-columns: 1fr; }
 .dropdown-item:hover,
 .dropdown-item:focus-visible {
   background: linear-gradient(135deg, #f7f9f3 0%, #edf4e8 100%);
